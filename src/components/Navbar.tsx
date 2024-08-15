@@ -12,7 +12,7 @@ const Navbar = () => {
         </div>
         <div>
             {
-                user ? :
+                user ? <Link></Link>:
             }
         </div>
     </nav>
