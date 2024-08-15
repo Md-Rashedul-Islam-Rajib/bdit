@@ -9,6 +9,11 @@ const Navbar: React.FC = () => {
         setIsOpen(!isOpen);
       };
 
+      const handleLogout = () => {
+        // Implement your logout logic here
+        console.log("Logged out");
+      };
+
   return (
     <nav>
         <div className='text-green-600 text-4xl font-bold bg-black py-4 px-2 cursor-pointer'>
