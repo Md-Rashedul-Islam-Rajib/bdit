@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
                     onClick={toggleDropdown}
                     className="flex items-center focus:outline-none"
                     >
-                        <img src={user} alt="UserPNG" />
+                        <img src={user} alt="UserPNG" className="rounded-full" />
                     </button>
                 </div>
                 :
