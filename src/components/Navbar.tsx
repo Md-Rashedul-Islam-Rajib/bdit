@@ -25,7 +25,12 @@ const Navbar: React.FC = () => {
             {
                 user ? 
                 <div>
-                    <button></button>
+                    <button 
+                    onClick={toggleDropdown}
+                    className="flex"
+                    >
+
+                    </button>
                 </div>
                 :
                 <Link to='/login'><button>Login</button></Link>
