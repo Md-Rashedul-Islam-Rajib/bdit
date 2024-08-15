@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
     const user = true;
+    
   return (
     <nav>
         <div className='text-green-600 text-4xl font-bold bg-black py-4 px-2 cursor-pointer'>
@@ -12,7 +13,10 @@ const Navbar = () => {
         </div>
         <div>
             {
-                user ? :<Link to='/login'><button>Login</button></Link>
+                user ? 
+                <div className=''></div>
+                :
+                <Link to='/login'><button>Login</button></Link>
             }
         </div>
     </nav>
