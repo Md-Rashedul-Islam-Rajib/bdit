@@ -33,6 +33,11 @@ const Navbar: React.FC = () => {
                         <img src={user} alt="UserPNG" className="rounded-full size-10" />
                     </button>
                 </div>
+                {isOpen && 
+                    (
+                        <div></div>
+                    )
+                }
                 :
                 <Link to='/login'><button>Login</button></Link>
             }
