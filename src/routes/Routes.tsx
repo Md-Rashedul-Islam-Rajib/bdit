@@ -5,7 +5,7 @@ import Mainlayout from "../layouts/Mainlayout";
 export const router = createBrowserRouter([
     {
         path : '/',
-        element: 
+        element: <Mainlayout />
     }
 ])
 
