@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
                 <div>
                     <button 
                     onClick={toggleDropdown}
-                    className="flex"
+                    className="flex items-center"
                     >
 
                     </button>
