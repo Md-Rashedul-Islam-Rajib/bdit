@@ -24,7 +24,9 @@ const Navbar: React.FC = () => {
         <div>
             {
                 user ? 
-                <div></div>
+                <div>
+                    <button></button>
+                </div>
                 :
                 <Link to='/login'><button>Login</button></Link>
             }
