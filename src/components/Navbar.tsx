@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav>
         <div>
-            BD<span className=''>IT</span>
+            BD<span className='text-red-600'>IT</span>
         </div>
         <div></div>
         <div></div>
