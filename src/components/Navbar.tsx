@@ -12,7 +12,7 @@ const Navbar = () => {
         </div>
         <div>
             {
-                user ? <Link></Link>:
+                user ? <Link to='/login'></Link>:
             }
         </div>
     </nav>
