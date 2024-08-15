@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav>
         <div>
-            BD<span></span>
+            BD<span>It</span>
         </div>
         <div></div>
         <div></div>
