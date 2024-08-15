@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         <div>
             {
                 user ? 
-                <div className='relative inline-block'>
+                <div className='relative inline-block text-center'>
                     <button 
                     onClick={toggleDropdown}
                     className="flex items-center focus:outline-none"
