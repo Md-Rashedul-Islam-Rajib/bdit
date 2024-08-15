@@ -35,7 +35,8 @@ const Navbar: React.FC = () => {
                 </div>
                 {isOpen && 
                     (
-                        <div></div>
+                        <div className='origin-top-right'>
+                        </div>
                     )
                 }
                 :
