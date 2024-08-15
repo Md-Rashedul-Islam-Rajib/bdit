@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom'
 const Navbar: React.FC = () => {
     const user = true;
     const [isOpen, setIsOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+      };
+
   return (
     <nav>
         <div className='text-green-600 text-4xl font-bold bg-black py-4 px-2 cursor-pointer'>
