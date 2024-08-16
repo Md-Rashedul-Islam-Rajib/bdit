@@ -17,4 +17,5 @@ import {
     createUser: (email: string, password: string) => Promise<void>;
     logInUser: (email: string, password: string) => Promise<void>;
     logOutUser: () => Promise<void>;
+    googleLogin: () => Promise<void>;
   }
