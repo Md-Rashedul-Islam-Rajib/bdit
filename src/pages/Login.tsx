@@ -134,7 +134,9 @@ const Login: React.FC = () => {
           <hr />
 
           <div className="mt-4 flex">
-          <FcGoogle />
+          <FcGoogle 
+          onClick={handleGoogle}
+          />
           </div>
     </div>
   );
