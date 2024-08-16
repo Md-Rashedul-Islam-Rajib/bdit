@@ -12,5 +12,5 @@ import {
   import auth from "../firebase/firebase.config";
 
   interface AuthContextProps {
-    
+    user: User | null;
   }
