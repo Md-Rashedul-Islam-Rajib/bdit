@@ -62,6 +62,7 @@ const Footer = () => {
         <div>
         <FaPhoneVolume />
         <p>Call Us</p>
+        <p>Call Us</p>
         </div>
         
       </div>
