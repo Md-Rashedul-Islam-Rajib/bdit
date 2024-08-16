@@ -124,8 +124,8 @@ const Login: React.FC = () => {
       </form>
 
 
-          <div>
-            
+          <div className="flex">
+
           </div>
 
     </div>
