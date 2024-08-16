@@ -8,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className='bg-black text-white py-4'>
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-4">
         
         <div className='bg-sky-400 size-8 p-2 rounded-full'>
         <FaFacebookF />
