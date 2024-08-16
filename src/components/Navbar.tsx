@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import userphoto from "../assets/user.png";
 import { useForm, SubmitHandler } from 'react-hook-form';
+
+
 interface SearchFormInput {
   searchQuery: string;
 }
@@ -28,7 +30,7 @@ const Navbar: React.FC = () => {
       </div>
       <div>
         <div>
-
+          <form></form>
         </div>
       </div>
       <div>
