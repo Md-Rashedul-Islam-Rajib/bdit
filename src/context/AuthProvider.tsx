@@ -45,7 +45,7 @@ import {
 
   // Sign in user
   const logInUser = (email: string, password: string) => {
-    
+    setLoading(true);
   }
     return (
       <div>
