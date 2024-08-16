@@ -14,7 +14,7 @@ const Card = () => {
       }
   return (
     <div>
-      <div className='size-60 cursor-pointer'>
+      <div className='size-60 cursor-pointer hover:scale-125'>
         <img src={demo.image} alt="Product" />
       </div>
 
