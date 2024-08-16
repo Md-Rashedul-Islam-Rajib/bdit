@@ -18,6 +18,7 @@ const Login: React.FC = () => {
     useContext(AuthContext);
 
     const location = useLocation();
+    const navigate = useNavigate();
   return (
     
   )
