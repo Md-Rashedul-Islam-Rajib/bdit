@@ -31,7 +31,7 @@ const Login: React.FC = () => {
       const {email, password} = data;
       logInUser(email,password)
       .then((result)=>{
-        
+        setUser(result.user);
       })
     }
 
