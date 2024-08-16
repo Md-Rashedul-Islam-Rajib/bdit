@@ -86,6 +86,7 @@ import {
 
    const authInfo: AuthContextProps = {
     user,
+    setUser,
    }
 
     return (
