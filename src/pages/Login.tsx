@@ -63,7 +63,9 @@ const Login: React.FC = () => {
 
 
   return (
-    <div></div>
+    <div className="md:w-2/5">
+
+    </div>
   )
 }
 
