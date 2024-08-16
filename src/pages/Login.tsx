@@ -77,6 +77,8 @@ const Login: React.FC = () => {
           </svg>
           <input 
           type="text"
+          className="grow"
+
            />
         </label>
 
