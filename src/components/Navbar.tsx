@@ -25,6 +25,7 @@ const Navbar: React.FC = () => {
 
   const onSubmit: SubmitHandler<SearchFormInput> = (data) => {
     console.log(data.searchQuery)
+    reset();
   }
   return (
     <nav className="flex items-center justify-between bg-black p-4">
