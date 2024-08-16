@@ -34,7 +34,7 @@ const Login: React.FC = () => {
         setUser(result.user);
       })
       .catch((error)=> {
-        
+        const errorCode = error.code;
       })
     }
 
