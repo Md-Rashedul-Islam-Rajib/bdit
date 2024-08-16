@@ -14,4 +14,5 @@ import {
   interface AuthContextProps {
     user: User | null;
     loading: boolean;
+    createUser: (email: string, password: string) => Promise<void>;
   }
