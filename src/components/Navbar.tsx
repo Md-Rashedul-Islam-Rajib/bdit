@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
         <div>
           <form 
           onSubmit={handleSubmit(onSubmit)}
-          
+          className='flex-grow mx-4'
           ></form>
         </div>
       </div>
