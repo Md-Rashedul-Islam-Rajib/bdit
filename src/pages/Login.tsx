@@ -19,6 +19,7 @@ const Login: React.FC = () => {
 
     const location = useLocation();
     const navigate = useNavigate();
+    const destination = location?.state || "/";
   return (
     
   )
