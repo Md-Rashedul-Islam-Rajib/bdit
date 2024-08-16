@@ -14,7 +14,7 @@ const Card = () => {
       }
   return (
     <div className='shadow-lg shadow-slate-400 p-5'>
-      <div className='size-36 md:size-48 lg:size-60 cursor-pointer hover:scale-105'>
+      <div className='size-36 md:size-48 lg:size-60 cursor-pointer hover:scale-105 mx-auto'>
         <img src={demo.image} alt="Product" />
       </div>
         <h3 className='md:text-lg lg:text-xl font-semibold text-red-600 text-center'>{demo.name}</h3>
