@@ -26,8 +26,8 @@ const Footer = () => {
         <SlSocialSkype />
         </div>
 
-        <div>
-          
+        <div className="bg-sky-400">
+
         </div>
 
       </div>
