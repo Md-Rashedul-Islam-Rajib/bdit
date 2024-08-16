@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
 
         <div className="bg-sky-400 size-8 p-2 rounded-full">
-
+        <FaRegEnvelope />
         </div>
 
       </div>
