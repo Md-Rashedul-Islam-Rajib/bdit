@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
         <div>
           <form 
           onSubmit={handleSubmit(onSubmit)}
-          className='relative flex-grow mx-4 mt-4 md:mt-0 order-3 sm:order-none'
+          className='relative flex-grow mx-4 mt-4 md:mt-0 order-3 sm:order-none w-full'
           >
             <input 
             type="text"
