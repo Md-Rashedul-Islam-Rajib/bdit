@@ -54,6 +54,7 @@ const Login: React.FC = () => {
       githubLogin()
       .then((result) =>{
         setUser(result.user);
+        navigate(destination);
       })
     }
 
