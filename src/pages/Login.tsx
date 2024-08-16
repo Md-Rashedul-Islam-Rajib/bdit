@@ -124,7 +124,7 @@ const Login: React.FC = () => {
       </form>
 
 
-          <div className="flex">
+          <div className="flex justify-between">
 
           </div>
 
