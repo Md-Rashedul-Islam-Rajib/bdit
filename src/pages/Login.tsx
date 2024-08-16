@@ -43,6 +43,7 @@ const Login: React.FC = () => {
      googleLogin()
      .then((result) => {
       setUser(result.user);
+      navigate(destination)
      })
     }
 
