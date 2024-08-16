@@ -138,6 +138,10 @@ const Login: React.FC = () => {
           onClick={handleGoogle}
           className="mx-auto size-10 cursor-pointer"
           />
+          <FaGithub
+          onClick={handleGithub}
+          className="mx-auto h-10 w-10 cursor-pointer"
+        />
           </div>
     </div>
   );
