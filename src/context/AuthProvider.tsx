@@ -13,4 +13,5 @@ import {
 
   interface AuthContextProps {
     user: User | null;
+    loading: boolean;
   }
