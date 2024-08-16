@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <main>
       <div>
-        
+        <Card />
       </div>
     </main>
   )
