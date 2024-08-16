@@ -84,6 +84,10 @@ import {
    },[])
 
 
+   const authInfo: AuthContextProps = {
+    
+   }
+
     return (
       <div>
         
