@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h2>Customer Service</h2>
+          <h2 className="text-lg">Customer Service</h2>
           <p>Online Delivery</p>
           <p>Refund Policy</p>
           <p>EMI Terms</p>
