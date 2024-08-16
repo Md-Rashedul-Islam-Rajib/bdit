@@ -70,6 +70,11 @@ import {
     setLoading(true);
     return signInWithPopup(auth, githubProvider);
    }
+
+
+   useEffect(()=> {},[])
+
+
     return (
       <div>
         
