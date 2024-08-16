@@ -89,6 +89,7 @@ import {
     setUser,
     createUser,
     logInUser,
+    logOutUser,
    }
 
     return (
