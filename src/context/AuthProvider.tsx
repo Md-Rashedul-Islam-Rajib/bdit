@@ -21,3 +21,7 @@ import {
     githubLogin: () => Promise<void>;
     setUser: React.Dispatch<React.SetStateAction<User | null>>;
   }
+
+  export const AuthContext = createContext<AuthContextProps | undefined>(
+    undefined
+  );
