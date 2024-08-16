@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import userphoto from "../assets/user.png";
+import { FiSearch } from 'react-icons/fi';
 import { useForm, SubmitHandler } from 'react-hook-form';
 
 
