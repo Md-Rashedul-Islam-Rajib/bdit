@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
             type='submit'
             className='absolute right-2 top-1/2 transform -translate-y-1/2'
             >
-              <FiSearch className='text-gray-700' />
+              <FiSearch className='text-gray-700 size-5' />
             </button>
           </form>
         </div>
