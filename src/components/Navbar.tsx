@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import userphoto from "../assets/user.png";
+import { useForm, SubmitHandler } from 'react-hook-form';
 
 const Navbar: React.FC = () => {
   const user = true;  // This should be determined by your authentication logic
@@ -10,6 +11,7 @@ const Navbar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const { register, handleSubmit, reset } = useForm<SearchFormInput>();
   const handleLogout = () => {
     // Implement your logout logic here
     console.log("Logged out");
@@ -22,7 +24,9 @@ const Navbar: React.FC = () => {
         <Link to='/'>BD<span className='text-red-600'>IT</span></Link>
       </div>
       <div>
-        <div></div>
+        <div>
+
+        </div>
       </div>
       <div>
         {user ? (
