@@ -74,7 +74,7 @@ import {
 
    useEffect(()=> {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-        
+        setUser(currentUser);
     }
    },[])
 
