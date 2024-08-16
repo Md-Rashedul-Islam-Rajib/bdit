@@ -8,6 +8,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 interface LoginFormInputs {
   email: string;
+  password: string;
 }
 
 const Login = () => {
