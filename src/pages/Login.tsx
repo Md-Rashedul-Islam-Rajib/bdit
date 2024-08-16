@@ -133,7 +133,7 @@ const Login: React.FC = () => {
 
           <hr />
 
-          <div className="mt-4">
+          <div className="mt-4 flex">
 
           </div>
     </div>
