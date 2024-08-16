@@ -21,6 +21,7 @@ const Navbar: React.FC = () => {
       <div className="text-green-600 text-4xl font-bold cursor-pointer">
         <Link to='/'>BD<span className='text-red-600'>IT</span></Link>
       </div>
+      <div></div>
       <div>
         {user ? (
           <div className="relative inline-block text-left">
