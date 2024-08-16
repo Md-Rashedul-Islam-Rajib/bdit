@@ -4,7 +4,7 @@ import Card from '../components/Card'
 const Home = () => {
   return (
     <main>
-      <div>
+      <div className='grid'>
         <Card />
       </div>
     </main>
