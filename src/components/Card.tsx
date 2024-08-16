@@ -17,7 +17,7 @@ const Card = () => {
       <div className='size-36 md:size-48 lg:size-60 cursor-pointer hover:scale-105'>
         <img src={demo.image} alt="Product" />
       </div>
-        <h3 className='md:text-lg lg:text-xl font-semibold text-red-600'>{demo.name}</h3>
+        <h3 className='md:text-lg lg:text-xl font-semibold text-red-600 text-center'>{demo.name}</h3>
         <p>{demo.price}৳</p>
     </div>
   )
