@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
               <img 
                 src={userphoto} 
                 alt="User" 
-                className="rounded-full w-10 h-10" 
+                className="rounded-full md:w-10 h-10" 
               />
             </button>
 
