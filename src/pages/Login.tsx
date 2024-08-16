@@ -78,7 +78,7 @@ const Login: React.FC = () => {
           <input 
           type="text"
           className="grow"
-
+          placeholder="Email"
            />
         </label>
 
