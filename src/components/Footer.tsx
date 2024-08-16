@@ -2,6 +2,7 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { SlSocialSkype } from "react-icons/sl";
+import { BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
   return (
