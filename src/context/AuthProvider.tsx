@@ -29,3 +29,16 @@ import {
   interface AuthProviderProps {
     children: ReactNode;
   }
+
+ 
+  
+  const AuthProvider = () => {
+    return (
+      <div>
+        
+      </div>
+    )
+  }
+  
+  export default AuthProvider
+  
