@@ -34,6 +34,7 @@ import {
   
   const AuthProvider: React.FC<AuthContextProps> = ({children}) => {
     const [loading, setLoading] = useState<boolean>(true);
+    const [user, setUser] = useState<User | null>(null);
     return (
       <div>
         
