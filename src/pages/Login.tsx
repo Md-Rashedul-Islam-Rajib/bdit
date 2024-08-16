@@ -99,6 +99,8 @@ const Login: React.FC = () => {
               clipRule="evenodd"
             />
           </svg>
+          <input
+           type="text" />
           </label>
       </form>
     </div>
