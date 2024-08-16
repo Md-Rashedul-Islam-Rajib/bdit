@@ -18,7 +18,7 @@ const Card = () => {
         <img src={demo.image} alt="Product" />
       </div>
         <h3 className='md:text-lg lg:text-xl font-semibold text-red-600'>{demo.name}</h3>
-        <p></p>
+        <p>{demo.price}৳</p>
     </div>
   )
 }
