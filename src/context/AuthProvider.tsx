@@ -35,6 +35,11 @@ import {
   const AuthProvider: React.FC<AuthContextProps> = ({children}) => {
     const [loading, setLoading] = useState<boolean>(true);
     const [user, setUser] = useState<User | null>(null);
+
+    // Register user
+  const createUser = (email: string, password: string) => {
+    
+  }
     return (
       <div>
         
