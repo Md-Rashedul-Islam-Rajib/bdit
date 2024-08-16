@@ -86,7 +86,7 @@ const Login: React.FC = () => {
           )}
         </label>
 
-          <label className="input ">
+          <label className="input input-bordered">
 
           </label>
       </form>
