@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
                         <button 
                         onClick={handleLogout}
                         role='menuitem'
-                        className='text-gray-700 block px-4 py-2 text-sm w-full hover:text-gray-200'
+                        className='text-gray-700 block px-4 py-2 text-sm w-full hover:text-gray-200 text-center'
                         >
                         </button>
                         </div>
