@@ -105,8 +105,10 @@ const Login: React.FC = () => {
             placeholder="Password"
             {...register("password", { required: true })}
            />
-           <span>
-            
+           <span
+           onClick={()=> setShowPassword(!showPassword)}
+           >
+
            </span>
           </label>
       </form>
