@@ -57,7 +57,7 @@ const Login: React.FC = () => {
         navigate(destination);
       })
       .catch((error) => {
-        
+        console.log(error)
       })
     }
 
