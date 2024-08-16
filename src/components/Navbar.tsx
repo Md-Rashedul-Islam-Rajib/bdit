@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
           >
             <input 
             type="text"
-            className='w-full'
+            className='w-full p-2'
             />
           </form>
         </div>
