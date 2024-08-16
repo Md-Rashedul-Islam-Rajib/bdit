@@ -23,7 +23,9 @@ const Navbar: React.FC = () => {
     setIsOpen(false);
   };
 
-  const onSubmit: SubmitHandler<SearchFormInput> = (data) => {}
+  const onSubmit: SubmitHandler<SearchFormInput> = (data) => {
+    console.log(data.searchQuery)
+  }
   return (
     <nav className="flex items-center justify-between bg-black p-4">
       <div className="text-green-600 text-4xl font-bold cursor-pointer">
