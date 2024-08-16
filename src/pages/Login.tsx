@@ -13,6 +13,9 @@ interface LoginFormInputs {
 
 const Login: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
+
+  const { logInUser, setUser, googleLogin, githubLogin, user } =
+    useContext(AuthContext);
   return (
     
   )
