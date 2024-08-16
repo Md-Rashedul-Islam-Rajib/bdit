@@ -14,9 +14,10 @@ const Card = () => {
       }
   return (
     <div>
-      <div>
+      <div className='size-60'>
         <img src={demo.image} alt="Product" />
       </div>
+
     </div>
   )
 }
