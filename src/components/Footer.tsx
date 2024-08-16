@@ -48,6 +48,7 @@ const Footer = () => {
           <p>Contact Us</p>
           <p>Warranty Policy</p>
           <p>Terms and Conditions</p>
+          <p>Terms and Conditions</p>
         </div>
 
       </div>
