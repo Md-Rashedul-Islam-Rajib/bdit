@@ -38,7 +38,7 @@ const Footer = () => {
 
       <div>
         <div>
-          BD
+          BD <span></span>
         </div>
       </div>
       
