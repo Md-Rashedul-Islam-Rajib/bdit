@@ -1,5 +1,6 @@
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { FaRegEnvelope } from "react-icons/fa6";
 
 const Footer = () => {
   return (
