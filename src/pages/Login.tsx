@@ -6,6 +6,10 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { AuthContext } from "../context/AuthProvider";
 import toast, { Toaster } from "react-hot-toast";
 
+interface LoginFormInputs {
+  
+}
+
 const Login = () => {
   return (
     
