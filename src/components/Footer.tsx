@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h2 className="text-lg"> About Us</h2>
+          <h2 className="text-lg font-semibold"> About Us</h2>
           <p>Contact Us</p>
           <p>Warranty Policy</p>
           <p>Terms and Conditions</p>
