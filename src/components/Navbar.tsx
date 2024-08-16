@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
                         aria-labelledby="user-menu"
                         >
                         <div className='py-1' role='none'>
-                        <button>
+                        <button onClick={handleLogout}>
                         </button>
                         </div>
 
