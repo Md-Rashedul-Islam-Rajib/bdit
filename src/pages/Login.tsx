@@ -29,7 +29,7 @@ const Login: React.FC = () => {
 
     const onSubmit: SubmitHandler<LoginFormInputs> = (data) => {
       const {email, password} = data;
-      
+      logInUser(email,password)
     }
 
   return (
