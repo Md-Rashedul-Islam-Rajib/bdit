@@ -4,6 +4,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaEye, FaEyeSlash, FaGithub } from "react-icons/fa";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { AuthContext } from "../context/AuthProvider";
+import toast, { Toaster } from "react-hot-toast";
 
 const Login = () => {
   return (
