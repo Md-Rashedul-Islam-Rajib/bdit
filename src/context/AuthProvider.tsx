@@ -68,6 +68,7 @@ import {
    const githubProvider = new GithubAuthProvider();
    const githubLogin = () => {
     setLoading(true);
+    return signInWithPopup(auth, githubProvider);
    }
     return (
       <div>
