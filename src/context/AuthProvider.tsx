@@ -72,7 +72,11 @@ import {
    }
 
 
-   useEffect(()=> {},[])
+   useEffect(()=> {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+        
+    }
+   },[])
 
 
     return (
