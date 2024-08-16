@@ -115,8 +115,9 @@ const Login: React.FC = () => {
           )}
         </label>
 
-          <button>
-            
+          <button 
+          type="submit">
+
           </button>
 
       </form>
