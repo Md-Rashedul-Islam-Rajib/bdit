@@ -41,6 +41,7 @@ const Navbar: React.FC = () => {
             <input 
             type="text"
             className='w-full p-2 rounded bg-gray-200 focus:bg-white focus:outline-none'
+            placeholder='Search....'
             />
           </form>
         </div>
