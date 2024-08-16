@@ -38,7 +38,7 @@ import {
 
     // Register user
   const createUser = (email: string, password: string) => {
-    
+    setLoading(true);
   }
     return (
       <div>
