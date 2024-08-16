@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
             />
             <button
             type='submit'
-            className='absolute'
+            className='absolute right-2'
             >
 
             </button>
