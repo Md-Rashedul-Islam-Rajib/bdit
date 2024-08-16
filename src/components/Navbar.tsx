@@ -35,11 +35,14 @@ const Navbar: React.FC = () => {
                 </div>
                 {isOpen && 
                     (
-                        <div className='origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10'
+                        <div 
+                        className='origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10'
                         role="menu" 
                         aria-orientation="vertical" 
                         aria-labelledby="user-menu"
                         >
+                        <div></div>
+
                         </div>
                     )
                 }
