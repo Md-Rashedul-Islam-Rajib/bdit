@@ -39,7 +39,7 @@ const Footer = () => {
 
       <div>
         <div className="text-green-600 text-2xl md:text-3xl lg:text-4xl font-bold cursor-pointer">
-         <Link></Link> BD<span className="text-red-600">IT</span>
+         <Link> BD<span className="text-red-600">IT</span></Link>
         </div>
       </div>
       
