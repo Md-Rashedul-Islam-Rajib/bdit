@@ -79,6 +79,7 @@ const Login: React.FC = () => {
           type="text"
           className="grow"
           placeholder="Email"
+          {...register("email", { required: true })}
            />
         </label>
 
