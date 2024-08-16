@@ -54,6 +54,10 @@ import {
     await signOut(auth);
     setUser(null);
   }
+
+
+  // Google login
+  const googleProvider = new GoogleAuthProvider();
     return (
       <div>
         
