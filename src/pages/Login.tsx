@@ -136,6 +136,7 @@ const Login: React.FC = () => {
           <div className="mt-4 flex">
           <FcGoogle 
           onClick={handleGoogle}
+          className="mx-auto"
           />
           </div>
     </div>
