@@ -133,7 +133,9 @@ const Login: React.FC = () => {
 
           <hr />
 
-          <div></div>
+          <div className="mt-4">
+
+          </div>
     </div>
   );
 };
