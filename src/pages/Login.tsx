@@ -102,6 +102,7 @@ const Login: React.FC = () => {
           <input
             type={showPassword ? "text" : "password"} 
             className="grow"
+            placeholder="Password"
            />
           </label>
       </form>
