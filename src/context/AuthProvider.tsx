@@ -25,3 +25,7 @@ import {
   export const AuthContext = createContext<AuthContextProps | undefined>(
     undefined
   );
+
+  interface AuthProviderProps {
+    children: ReactNode;
+  }
