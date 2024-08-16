@@ -53,6 +53,7 @@ const Footer = () => {
 
         <div>
           <h2>Customer Service</h2>
+          <p></p>
         </div>
 
       </div>
