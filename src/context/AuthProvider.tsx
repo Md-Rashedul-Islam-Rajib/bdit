@@ -32,7 +32,8 @@ import {
 
  
   
-  const AuthProvider = () => {
+  const AuthProvider: React.FC<AuthContextProps> = ({children}) => {
+    const [loading, setLoading] = useState<boolean>(true);
     return (
       <div>
         
