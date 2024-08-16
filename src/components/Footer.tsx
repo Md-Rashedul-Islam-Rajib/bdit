@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center">
-        <FaPhoneVolume />
+        <FaPhoneVolume className="mx-auto" />
         <p>Call Us</p>
         <p>Service Hotline : 01303050669</p>
         </div>
