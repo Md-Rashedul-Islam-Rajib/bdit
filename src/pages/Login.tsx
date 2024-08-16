@@ -42,7 +42,7 @@ const Login: React.FC = () => {
     const handleGoogle = () => {
      googleLogin()
      .then((result) => {
-      
+      setUser(result.user);
      })
     }
 
