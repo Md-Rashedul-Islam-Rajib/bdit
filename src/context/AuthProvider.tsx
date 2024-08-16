@@ -48,6 +48,11 @@ import {
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   }
+
+  // Sign out user
+  const logOutUser = async () => {
+    
+  }
     return (
       <div>
         
