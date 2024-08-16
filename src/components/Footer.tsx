@@ -37,8 +37,8 @@ const Footer = () => {
       </div>
 
       <div>
-        <div className="text-green-600 text-2xl md:text-3xl lg:text-4xl">
-          BD<span>IT</span>
+        <div className="text-green-600 text-2xl md:text-3xl lg:text-4xl font-bold cursor-pointer">
+          BD<span >IT</span>
         </div>
       </div>
       
