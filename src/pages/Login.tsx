@@ -101,6 +101,7 @@ const Login: React.FC = () => {
           </svg>
           <input
             type={showPassword ? "text" : "password"} 
+            className="grow"
            />
           </label>
       </form>
