@@ -4,6 +4,7 @@ import { FaRegEnvelope } from "react-icons/fa6";
 import { SlSocialSkype } from "react-icons/sl";
 import { BsTwitterX } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
+import { FaPhoneVolume } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -59,7 +60,7 @@ const Footer = () => {
         </div>
 
         <div>
-          
+
         </div>
         
       </div>
