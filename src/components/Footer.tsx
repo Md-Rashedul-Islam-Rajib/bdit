@@ -60,7 +60,8 @@ const Footer = () => {
         </div>
 
         <div>
-
+        <FaPhoneVolume />
+        
         </div>
         
       </div>
