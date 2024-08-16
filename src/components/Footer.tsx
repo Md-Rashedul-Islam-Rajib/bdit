@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='bg-sky-400 size-8 p-2 rounded-full'>
         <FaFacebookF />
         </div>
-        <div className="bg-sky-400 size-8">
+        <div className="bg-sky-400 size-8 p-2">
 
         </div>
       </div>
