@@ -51,7 +51,7 @@ import {
 
   // Sign out user
   const logOutUser = async () => {
-    
+    await signOut(auth);
   }
     return (
       <div>
