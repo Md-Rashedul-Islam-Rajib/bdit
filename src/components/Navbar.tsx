@@ -10,7 +10,12 @@ interface SearchFormInput {
 }
 
 const Navbar: React.FC = () => {
-  const user = true;  // This should be determined by your authentication logic
+  const user = true;  
+  
+  const onSubmit: SubmitHandler<SearchFormInput> = (data) => {
+    console.log(data.searchQuery)
+    reset();
+  }
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -24,10 +29,6 @@ const Navbar: React.FC = () => {
     setIsOpen(false);
   };
 
-  const onSubmit: SubmitHandler<SearchFormInput> = (data) => {
-    console.log(data.searchQuery)
-    reset();
-  }
   return (
     <nav className="flex flex-wrap items-center justify-between bg-black p-4">
       <div className="text-green-600 text-2xl md:text-3xl lg:text-4xl font-bold cursor-pointer">
