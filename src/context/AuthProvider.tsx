@@ -41,6 +41,12 @@ import {
     setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   }
+
+
+  // Sign in user
+  const logInUser = (email: string, password: string) => {
+    
+  }
     return (
       <div>
         
