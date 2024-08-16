@@ -58,6 +58,9 @@ import {
 
   // Google login
   const googleProvider = new GoogleAuthProvider();
+  const googleLogin = () => {
+    
+  }
     return (
       <div>
         
