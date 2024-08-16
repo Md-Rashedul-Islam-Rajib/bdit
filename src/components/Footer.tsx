@@ -26,6 +26,10 @@ const Footer = () => {
         <SlSocialSkype />
         </div>
 
+        <div>
+          
+        </div>
+
       </div>
       <p className='text-center'>Copyright © 2024, BDIT, All Rights Reserved</p>
     </footer>
