@@ -33,6 +33,9 @@ const Login: React.FC = () => {
       .then((result)=>{
         setUser(result.user);
       })
+      .catch((error)=> {
+        
+      })
     }
 
   return (
