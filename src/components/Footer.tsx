@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className='bg-black text-white py-4'>
       <div className="flex flex-wrap justify-center gap-4">
         
-        <div className='bg-sky-400 size-8 p-2 rounded-full'>
+        <div className='bg-sky-400 size-8 p-2 rounded-full cursor-pointer'>
         <FaFacebookF />
         </div>
         
