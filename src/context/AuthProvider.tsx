@@ -91,7 +91,8 @@ import {
     logInUser,
     logOutUser,
     googleLogin,
-    
+    githubLogin,
+
    }
 
     return (
