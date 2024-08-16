@@ -40,7 +40,10 @@ const Login: React.FC = () => {
     }
 
     const handleGoogle = () => {
-     googleLogin() 
+     googleLogin()
+     .then((result) => {
+      
+     })
     }
 
 
