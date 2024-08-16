@@ -19,4 +19,5 @@ import {
     logOutUser: () => Promise<void>;
     googleLogin: () => Promise<void>;
     githubLogin: () => Promise<void>;
+    setUser: React.Dispatch<React.SetStateAction<User | null>>;
   }
