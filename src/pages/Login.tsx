@@ -125,7 +125,8 @@ const Login: React.FC = () => {
 
 
           <div className="flex justify-between my-4 font-semibold">
-          <p></p>
+          <p>New here?</p>
+          
           </div>
 
     </div>
