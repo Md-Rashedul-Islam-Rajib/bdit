@@ -14,7 +14,7 @@ const Footer = () => {
         <FaFacebookF />
         </div>
         
-        <div className="bg-sky-400 size-8 p-2 rounded-full">
+        <div className="bg-sky-400 size-8 p-2 rounded-full cursor-pointer">
         <FaInstagram />
         </div>
 
