@@ -11,7 +11,7 @@ interface LoginFormInputs {
   password: string;
 }
 
-const Login = () => {
+const Login: React.FC = () => {
   return (
     
   )
