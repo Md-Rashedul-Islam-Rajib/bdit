@@ -23,6 +23,7 @@ const Navbar: React.FC = () => {
     setIsOpen(false);
   };
 
+  const onSubmit: SubmitHandler<SearchFormInput> = (data) => {}
   return (
     <nav className="flex items-center justify-between bg-black p-4">
       <div className="text-green-600 text-4xl font-bold cursor-pointer">
@@ -30,7 +31,10 @@ const Navbar: React.FC = () => {
       </div>
       <div>
         <div>
-          <form></form>
+          <form 
+          onSubmit={handleSubmit(onSubmit)}
+          
+          ></form>
         </div>
       </div>
       <div>
