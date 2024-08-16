@@ -55,7 +55,7 @@ const Footer = () => {
           <h2>Customer Service</h2>
           <p>Online Delivery</p>
           <p>Refund Policy</p>
-          <p>Refund Policy</p>
+          <p>EMI Terms</p>
         </div>
 
       </div>
