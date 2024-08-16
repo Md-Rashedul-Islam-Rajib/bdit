@@ -17,56 +17,55 @@ const Login: React.FC = () => {
   const { logInUser, setUser, googleLogin, githubLogin, user } =
     useContext(AuthContext);
 
-    const location = useLocation();
-    const navigate = useNavigate();
-    const destination = location?.state || "/";
+  const location = useLocation();
+  const navigate = useNavigate();
+  const destination = location?.state || "/";
 
-    const {
-      register,
-      handleSubmit,
-      formState: { errors },
-    } = useForm<LoginFormInputs>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<LoginFormInputs>();
 
-    const onSubmit: SubmitHandler<LoginFormInputs> = (data) => {
-      const {email, password} = data;
-      logInUser(email,password)
-      .then((result)=>{
+  const onSubmit: SubmitHandler<LoginFormInputs> = (data) => {
+    const { email, password } = data;
+    logInUser(email, password)
+      .then((result) => {
         setUser(result.user);
       })
-      .catch((error)=> {
+      .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-      })
-    }
+      });
+  };
 
-    const handleGoogle = () => {
-     googleLogin()
-     .then((result) => {
-      setUser(result.user);
-      navigate(destination)
-     })
-     .catch((error) => {
-      console.log(error)
-     })
-    }
-
-    const handleGithub = () => {
-      githubLogin()
-      .then((result) =>{
+  const handleGoogle = () => {
+    googleLogin()
+      .then((result) => {
         setUser(result.user);
         navigate(destination);
       })
       .catch((error) => {
-        console.log(error)
-      })
-    }
+        console.log(error);
+      });
+  };
 
+  const handleGithub = () => {
+    githubLogin()
+      .then((result) => {
+        setUser(result.user);
+        navigate(destination);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   return (
     <div className="md:w-2/5 mx-auto border rounded-lg p-4">
       <form onSubmit={handleSubmit(onSubmit)}>
         <label className="input input-bordered flex items-center gap-2 mb-4">
-        <svg
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
             fill="currentColor"
@@ -75,18 +74,18 @@ const Login: React.FC = () => {
             <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
             <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
           </svg>
-          <input 
-          type="text"
-          className="grow"
-          placeholder="Email"
-          {...register("email", { required: true })}
-           />
-           {errors.email && (
+          <input
+            type="text"
+            className="grow"
+            placeholder="Email"
+            {...register("email", { required: true })}
+          />
+          {errors.email && (
             <span className="text-red-600 text-sm">Email is required</span>
           )}
         </label>
 
-          <label className="input input-bordered flex items-center gap-2 mb-4">
+        <label className="input input-bordered flex items-center gap-2 mb-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
@@ -100,24 +99,29 @@ const Login: React.FC = () => {
             />
           </svg>
           <input
-            type={showPassword ? "text" : "password"} 
+            type={showPassword ? "text" : "password"}
             className="grow"
             placeholder="Password"
             {...register("password", { required: true })}
-           />
-           <span
-           onClick={()=> setShowPassword(!showPassword)}
-           className="cursor-pointer"
-           >
+          />
+          <span
+            onClick={() => setShowPassword(!showPassword)}
+            className="cursor-pointer"
+          >
             {showPassword ? <FaEyeSlash /> : <FaEye />}
-           </span>
-           {errors.password && (
+          </span>
+          {errors.password && (
             <span className="text-red-600 text-sm">Password is required</span>
           )}
-          </label>
+        </label>
+
+          <button>
+            
+          </button>
+
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
