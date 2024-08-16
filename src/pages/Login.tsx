@@ -131,6 +131,9 @@ const Login: React.FC = () => {
           </Link>
           </div>
 
+          <hr />
+
+          
     </div>
   );
 };
