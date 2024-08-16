@@ -8,7 +8,9 @@ const Footer = () => {
         <div className='bg-sky-400 size-8 p-2 rounded-full'>
         <FaFacebookF />
         </div>
-        <div></div>
+        <div className="bg-sky-400">
+
+        </div>
       </div>
       <p className='text-center'>Copyright © 2024, BDIT, All Rights Reserved</p>
     </footer>
