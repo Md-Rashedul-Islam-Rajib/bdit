@@ -45,7 +45,11 @@ const Navbar: React.FC = () => {
             placeholder='Search....'
             {...register('searchQuery', { required: true })}
             />
-            <button></button>
+            <button
+            type='submit'
+            >
+
+            </button>
           </form>
         </div>
       </div>
