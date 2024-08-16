@@ -45,6 +45,9 @@ const Login: React.FC = () => {
       setUser(result.user);
       navigate(destination)
      })
+     .catch((error) => {
+      
+     })
     }
 
 
