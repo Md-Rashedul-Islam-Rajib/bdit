@@ -16,6 +16,8 @@ const Login: React.FC = () => {
 
   const { logInUser, setUser, googleLogin, githubLogin, user } =
     useContext(AuthContext);
+
+    const location = useLocation();
   return (
     
   )
