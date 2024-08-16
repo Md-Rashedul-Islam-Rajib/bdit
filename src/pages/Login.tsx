@@ -117,7 +117,7 @@ const Login: React.FC = () => {
 
           <button 
           type="submit"
-          className="btn w-full">
+          className="btn w-full bg-black">
 
           </button>
 
