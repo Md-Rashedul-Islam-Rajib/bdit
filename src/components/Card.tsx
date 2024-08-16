@@ -19,6 +19,7 @@ const Card = () => {
       </div>
         <h3 className='md:text-lg lg:text-xl font-semibold text-red-600 text-center'>{demo.name}</h3>
         <p className='md:text-lg lg:text-xl font-medium flex items-center justify-center'>{demo.price}<span className='font-bold'><TbCurrencyTaka /></span></p>
+        <p></p>
     </div>
   )
 }
