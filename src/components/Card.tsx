@@ -13,7 +13,7 @@ const Card = () => {
         "creation_time": "now"
       }
   return (
-    <div className='shadow-lg shadow-slate-400'>
+    <div className='shadow-lg shadow-slate-400 p-5'>
       <div className='size-36 md:size-48 lg:size-60 cursor-pointer hover:scale-105'>
         <img src={demo.image} alt="Product" />
       </div>
