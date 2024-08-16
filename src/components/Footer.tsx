@@ -59,7 +59,7 @@ const Footer = () => {
           <p>EMI Terms</p>
         </div>
 
-        <div>
+        <div className="text-center">
         <FaPhoneVolume />
         <p>Call Us</p>
         <p>Service Hotline : 01303050669</p>
