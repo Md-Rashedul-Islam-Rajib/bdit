@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className='bg-black text-white py-4'>
       <div>
-        <div className='bg-sky-400'>
+        <div className='bg-sky-400 size-8'>
         <FaFacebookF />
         </div>
       </div>
