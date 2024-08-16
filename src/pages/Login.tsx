@@ -52,6 +52,9 @@ const Login: React.FC = () => {
 
     const handleGithub = () => {
       githubLogin()
+      .then((result) =>{
+        
+      })
     }
 
 
