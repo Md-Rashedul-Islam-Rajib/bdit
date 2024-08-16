@@ -17,7 +17,7 @@ const Card = () => {
       <div className='size-60 cursor-pointer hover:scale-125'>
         <img src={demo.image} alt="Product" />
       </div>
-
+        <h3></h3>
     </div>
   )
 }
