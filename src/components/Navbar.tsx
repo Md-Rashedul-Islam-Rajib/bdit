@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
     reset();
   }
   return (
-    <nav className="flex items-center justify-between bg-black p-4">
+    <nav className="flex flex-wrap items-center justify-between bg-black p-4">
       <div className="text-green-600 text-4xl font-bold cursor-pointer">
         <Link to='/'>BD<span className='text-red-600'>IT</span></Link>
       </div>
