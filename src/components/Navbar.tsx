@@ -41,7 +41,8 @@ const Navbar: React.FC = () => {
                         aria-orientation="vertical" 
                         aria-labelledby="user-menu"
                         >
-                        <div></div>
+                        <div className='py-1'>
+                        </div>
 
                         </div>
                     )
