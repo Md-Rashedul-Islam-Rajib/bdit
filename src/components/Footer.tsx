@@ -38,14 +38,14 @@ const Footer = () => {
 
       </div>
 
-      <div className="px-4 grid ">
+      <div className="px-4 grid grid-cols-4">
 
         <div className="text-green-600 text-2xl md:text-3xl lg:text-4xl font-bold cursor-pointer">
          <Link to='/'> BD<span className="text-red-600">IT</span></Link>
         </div>
 
         <div>
-          <h2> About Us</h2>
+          <h2 > About Us</h2>
           <p>Contact Us</p>
           <p>Warranty Policy</p>
           <p>Terms and Conditions</p>
