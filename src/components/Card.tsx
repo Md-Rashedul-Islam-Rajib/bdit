@@ -15,7 +15,7 @@ const Card = () => {
   return (
     <div>
       <div>
-        <img src={demo.image} alt="" />
+        <img src={demo.image} alt="Product" />
       </div>
     </div>
   )
