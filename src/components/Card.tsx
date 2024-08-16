@@ -1,4 +1,4 @@
-import React from 'react'
+import { TbCurrencyTaka } from "react-icons/tb";
 
 const Card = () => {
     const demo: object = {
@@ -18,7 +18,7 @@ const Card = () => {
         <img src={demo.image} alt="Product" />
       </div>
         <h3 className='md:text-lg lg:text-xl font-semibold text-red-600 text-center'>{demo.name}</h3>
-        <p className='md:text-lg lg:text-xl font-medium'>{demo.price}<span >৳</span></p>
+        <p className='md:text-lg lg:text-xl font-medium'>{demo.price}<span className='font-bold'>৳</span></p>
     </div>
   )
 }
