@@ -63,7 +63,7 @@ const Login: React.FC = () => {
 
 
   return (
-    <div className="md:w-2/5 mx-auto border">
+    <div className="md:w-2/5 mx-auto border rounded-lg">
 
     </div>
   )
