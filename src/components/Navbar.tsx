@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
           </form>
         </div>
       </div>
-      <div className='order-2'>
+      <div className='order-2 md:order-none'>
         {user ? (
           <div className="relative inline-block text-left">
             <button 
