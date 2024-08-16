@@ -6,4 +6,8 @@ const axiosPublic : AxiosInstance = axios.create(
     }
 );
 
+const useAxiosPublic = (): AxiosInstance => {
+    return axiosPublic;
+};
+
 export default useAxiosPublic
