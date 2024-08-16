@@ -62,7 +62,7 @@ const Footer = () => {
         <div>
         <FaPhoneVolume />
         <p>Call Us</p>
-        <p>Call Us</p>
+        <p>Service Hotline : 01303050669</p>
         </div>
         
       </div>
