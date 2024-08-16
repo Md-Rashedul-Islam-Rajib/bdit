@@ -66,6 +66,9 @@ import {
 
    // GitHub login
    const githubProvider = new GithubAuthProvider();
+   const githubLogin = () => {
+    
+   }
     return (
       <div>
         
