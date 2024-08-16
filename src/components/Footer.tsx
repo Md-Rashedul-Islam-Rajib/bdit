@@ -46,7 +46,7 @@ const Footer = () => {
         <div>
           <h2> About Us</h2>
           <p>Contact Us</p>
-          <p>Contact Us</p>
+          <p>Warranty Policy</p>
         </div>
 
       </div>
