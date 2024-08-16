@@ -126,7 +126,8 @@ const Login: React.FC = () => {
 
           <div className="flex justify-between my-4 font-semibold">
           <p>New here?</p>
-          <Link></Link>
+          <Link to='/register'>
+          </Link>
           </div>
 
     </div>
