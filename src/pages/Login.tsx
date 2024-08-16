@@ -20,6 +20,12 @@ const Login: React.FC = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const destination = location?.state || "/";
+
+    const {
+      register,
+      handleSubmit,
+      formState: { errors },
+    } = useForm<LoginFormInputs>();
   return (
     
   )
