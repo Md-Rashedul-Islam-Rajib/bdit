@@ -44,6 +44,7 @@ const Signup: React.FC = () => {
     createUser(email, password)
     .then(result => {
       console.log(result.user);
+      logOutUser();
     })
   }
 
