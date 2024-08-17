@@ -5,6 +5,10 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
+interface SignupFormInput {
+  
+}
+
 
 const Signup = () => {
   return (
