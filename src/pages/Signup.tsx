@@ -7,6 +7,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 interface SignupFormInput {
   Name: string;
+  email: string;
 }
 
 
