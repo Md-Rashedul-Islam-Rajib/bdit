@@ -68,7 +68,9 @@ const Signup: React.FC = () => {
           placeholder="Name"
           {...register("name", { required: true })}
           />
-
+            {errors.name && (
+            <span className="text-red-600 text-sm">Name is required</span>
+          )}
           </label>
 
         </form>
