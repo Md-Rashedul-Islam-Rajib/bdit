@@ -15,7 +15,9 @@ const Home: React.FC = () => {
     queryKey: ['products', currentPage],
     queryFn: async () => {
       const response = await axiosPublic.get("/", {
-        
+        params: {
+          
+        }
       });
       return response.data;
     }
