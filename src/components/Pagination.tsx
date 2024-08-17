@@ -20,6 +20,7 @@ const Pagination: React.FC<PaginationProps> = ({currentPage, totalPages,onPageCh
       {Array.from({length: totalPages}, (_,index) =>(
         <button
         key={index}
+        onClick={()=> onPageChange(index+1)}
         >
 
         </button>
