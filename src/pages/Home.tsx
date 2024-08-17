@@ -29,7 +29,7 @@ const Home: React.FC = () => {
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error loading products</div>;
 
-  const { products, currentPage: fetchedPage, totalPages } = data;
+  const { products, currentPage, totalPages } = data;
   console.log(products)
 
 
