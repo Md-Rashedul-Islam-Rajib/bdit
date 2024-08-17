@@ -2,10 +2,11 @@ import Card from '../components/Card';
 import { useQuery } from "@tanstack/react-query";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import Pagination from '../components/Pagination';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 
 const Home: React.FC = () => {
   const axiosPublic = useAxiosPublic();
+  const { searchQuery } = useContext(SearchContext);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [limit] = useState<number>(8);
 
