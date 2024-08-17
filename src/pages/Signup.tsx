@@ -86,7 +86,7 @@ const Signup: React.FC = () => {
 
           <input 
           type="text"
-          
+          className="grow"
           />
           </label>
 
