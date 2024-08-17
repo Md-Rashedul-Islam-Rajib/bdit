@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import userphoto from "../assets/user.png";
 import { FiSearch } from "react-icons/fi";
 import { useForm, SubmitHandler } from "react-hook-form";
-import AuthProvider from "../context/AuthProvider";
+import  { AuthContext } from "../context/AuthProvider";
 
 interface SearchFormInput {
   searchQuery: string;
@@ -12,7 +12,8 @@ interface SearchFormInput {
 
 
 const Navbar: React.FC = () => {
-  const { user, logOutUser } = useContext(AuthProvider);
+
+    const { user, logOutUser } = useContext(AuthContext);
 
   const onSubmit: SubmitHandler<SearchFormInput> = (data) => {
     console.log(data.searchQuery);
@@ -26,6 +27,7 @@ const Navbar: React.FC = () => {
 
   const { register, handleSubmit, reset } = useForm<SearchFormInput>();
   const handleLogout = () => {
+    logOutUser()
     console.log("Logged out");
     setIsOpen(false);
   };
