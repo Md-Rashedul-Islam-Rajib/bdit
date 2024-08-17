@@ -16,6 +16,7 @@ interface SignupFormInput {
 const Signup: React.FC = () => {
   const {createUser, logOutUser} = useAuth();
   const [showPassword, setShowPassword] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   return (
     <div>
       Signup
