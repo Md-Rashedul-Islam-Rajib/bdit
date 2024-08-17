@@ -4,6 +4,7 @@ interface CardProps {
     image: string;
     name: string;
     price: number;
+    category: string;
 }
 
 const Card = (image,name,price,category,brand) => {
