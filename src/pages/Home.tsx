@@ -5,7 +5,7 @@ import { useQuery } from "@tanstack/react-query"
 import useAxiosPublic from "../hooks/useAxiosPublic"
 import Pagination from '../components/Pagination'
 
-const Home = () => {
+const Home: React.FC = () => {
  
   const axiosPublic = useAxiosPublic();
 
