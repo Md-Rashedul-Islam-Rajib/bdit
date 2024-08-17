@@ -18,6 +18,7 @@ const Home: React.FC = () => {
         params: {
           page: currentPage,
           limit: limit,
+          search: searchQuery,
         },
       });
       return response.data;
