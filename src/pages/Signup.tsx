@@ -4,6 +4,7 @@ import { AuthContext } from "../context/AuthProvider.tsx";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import useAuth from "../hooks/useAuth.tsx";
 
 interface SignupFormInput {
   Name: string;
@@ -13,6 +14,7 @@ interface SignupFormInput {
 
 
 const Signup: React.FC = () => {
+  const {createUser, logOutUser} = useAuth();
   return (
     <div>
       Signup
