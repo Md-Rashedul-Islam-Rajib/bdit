@@ -8,7 +8,7 @@ const Mainlayout: React.FC = () => {
   return (
     <div className='w-screen'>
         <Navbar />
-        <div>
+        <div className={`${isAuthPage ? 'bg-black' : 'bg-white'}`}>
         <Outlet />
         </div>
         <Footer />
