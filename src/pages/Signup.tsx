@@ -128,6 +128,7 @@ const Signup: React.FC = () => {
           <div className="flex justify-center">
             <button
             type="submit"
+            className="btn"
             >
 
             </button>
