@@ -12,7 +12,7 @@ interface SignupFormInput {
 }
 
 
-const Signup = () => {
+const Signup: React.FC = () => {
   return (
     <div>
       Signup
