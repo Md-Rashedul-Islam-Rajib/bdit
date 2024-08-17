@@ -32,6 +32,7 @@ const Login: React.FC = () => {
     logInUser(email, password)
       .then((result) => {
         setUser(result.user);
+        navigate(destination);
       })
       .catch((error) => {
         const errorCode = error.code;
