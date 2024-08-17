@@ -65,7 +65,7 @@ const Login: React.FC = () => {
     <div className="bg-black h-full">
 
     <h3 className="text-center text-white py-2 font-bold text-3xl">Login Form</h3>
-    <div className="md:w-[25%] mx-auto border rounded-lg p-4 bg-white py-4">
+    <div className="md:w-[25%] mx-auto border rounded-lg px-4 bg-white py-4">
       <form onSubmit={handleSubmit(onSubmit)}>
         <label className="input input-bordered flex items-center gap-2 mb-4">
           <svg
