@@ -66,6 +66,7 @@ const Signup: React.FC = () => {
           type="text"
           className="grow py-2 pl-3"
           placeholder="Name"
+          {...register("name", { required: true })}
           />
 
           </label>
