@@ -40,6 +40,8 @@ const Signup: React.FC = () => {
       return setError('Password must have at least one lowercase character');
     }
     setError(null);
+
+    createUser(email, password)
   }
 
   return (
