@@ -55,7 +55,9 @@ const Signup: React.FC = () => {
 
   return (
     <div>
-      
+      <h3>
+        
+      </h3>
       <div className="md:w-[25%] mx-auto p-4 border rounded-lg bg-white">
         <form onSubmit={handleSubmit(onSubmit)}>
           <label className="input input-bordered flex items-center gap-2 mb-4">
