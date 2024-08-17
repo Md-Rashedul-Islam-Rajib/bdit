@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaEye, FaEyeSlash, FaGithub } from "react-icons/fa";
 import { useForm, SubmitHandler } from "react-hook-form";
-// import { AuthContext } from "../context/AuthProvider";
+import { AuthContext } from "../context/AuthProvider.tsx";
 // import toast, { Toaster } from "react-hot-toast";
 
 interface LoginFormInputs {
@@ -62,7 +62,10 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="md:w-2/5 mx-auto border rounded-lg p-4">
+    <div>
+
+    <h3 className="text-center my-4 font-bold text-3xl">Login Form</h3>
+    <div className="md:w-[25%] mx-auto border rounded-lg p-4">
       <form onSubmit={handleSubmit(onSubmit)}>
         <label className="input input-bordered flex items-center gap-2 mb-4">
           <svg
@@ -76,7 +79,7 @@ const Login: React.FC = () => {
           </svg>
           <input
             type="text"
-            className="grow"
+            className="grow py-2 pl-3"
             placeholder="Email"
             {...register("email", { required: true })}
           />
@@ -100,7 +103,7 @@ const Login: React.FC = () => {
           </svg>
           <input
             type={showPassword ? "text" : "password"}
-            className="grow"
+            className="grow py-2 pl-3"
             placeholder="Password"
             {...register("password", { required: true })}
           />
@@ -114,12 +117,13 @@ const Login: React.FC = () => {
             <span className="text-red-600 text-sm">Password is required</span>
           )}
         </label>
-
+          <div className="flex justify-center">
           <button 
           type="submit"
-          className="btn w-full bg-black text-white">
+          className="btn w-[40%] py-1 rounded-lg font-bold bg-black text-white">
             Login
           </button>
+            </div>
 
       </form>
 
@@ -143,6 +147,7 @@ const Login: React.FC = () => {
           className="mx-auto h-10 w-10 cursor-pointer"
         />
           </div>
+    </div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 
-import Card from '../components/Card'
+// import Card from '../components/Card'
 
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <main>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
-        <Card />
+        {/* <Card /> */}
       </div>
     </main>
   )
