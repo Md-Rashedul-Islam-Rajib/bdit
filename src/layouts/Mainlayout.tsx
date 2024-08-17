@@ -9,9 +9,8 @@ const Mainlayout: React.FC = () => {
     <div className='w-screen'>
         <Navbar />
         <div>
-          
-        </div>
         <Outlet />
+        </div>
         <Footer />
     </div>
   )
