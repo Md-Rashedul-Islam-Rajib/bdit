@@ -125,8 +125,8 @@ const Signup: React.FC = () => {
           )}
           </label>
 
-          <div>
-            
+          <div className="flex">
+
           </div>
 
         </form>
