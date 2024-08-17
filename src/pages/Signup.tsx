@@ -137,7 +137,7 @@ const Signup: React.FC = () => {
 
         </form>
 
-          <div className="flex justify-between">
+          <div className="flex justify-between font-semibold">
 
           </div>
 
