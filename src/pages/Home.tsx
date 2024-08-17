@@ -14,7 +14,9 @@ const Home: React.FC = () => {
   const {data : products = []} = useQuery({
     queryKey: ['products', currentPage],
     queryFn: async () => {
-      const response = await axiosPublic.get("/");
+      const response = await axiosPublic.get("/", {
+        
+      });
       return response.data;
     }
   })
