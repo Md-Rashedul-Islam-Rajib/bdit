@@ -29,7 +29,7 @@ const Pagination: React.FC<PaginationProps> = ({currentPage, totalPages,onPageCh
       <button
       onClick={()=> onPageChange(currentPage + 1)}
       disabled={currentPage === totalPages}
-      className='px-4 py-2 bg-black text-white'
+      className='px-4 py-2 bg-black text-white rounded-r-md'
       >
 
       </button>
