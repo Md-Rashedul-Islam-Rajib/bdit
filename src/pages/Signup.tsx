@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { IoImagesOutline } from "react-icons/io5";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
