@@ -128,7 +128,7 @@ const Signup: React.FC = () => {
           <div className="flex justify-center">
             <button
             type="submit"
-            className="btn"
+            className="btn w-[40%]"
             >
 
             </button>
