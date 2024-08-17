@@ -19,7 +19,12 @@ const Signup: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
 
-  
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<RegisterFormInput>();
+
   return (
     <div>
       Signup
