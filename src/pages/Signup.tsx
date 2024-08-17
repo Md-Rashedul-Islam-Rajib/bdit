@@ -95,8 +95,8 @@ const Signup: React.FC = () => {
           )}
           </label>
 
-          <label>
-            
+          <label className="input">
+
           </label>
 
         </form>
