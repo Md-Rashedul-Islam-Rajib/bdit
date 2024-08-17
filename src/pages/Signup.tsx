@@ -126,6 +126,9 @@ const Signup: React.FC = () => {
           </label>
 
           <div className="flex justify-center">
+            <button>
+              
+            </button>
 
           </div>
 
