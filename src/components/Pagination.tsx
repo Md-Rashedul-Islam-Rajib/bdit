@@ -12,6 +12,7 @@ const Pagination: React.FC<PaginationProps> = ({currentPage, totalPages,onPageCh
       <button 
       onClick={()=> onPageChange(currentPage -1)}
       disabled={currentPage === 1}
+      className='px-4'
       >
 
       </button>
