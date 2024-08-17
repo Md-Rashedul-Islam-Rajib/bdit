@@ -17,6 +17,7 @@ const Home: React.FC = () => {
       const response = await axiosPublic.get("/", {
         params: {
           page: currentPage,
+          limit: limit,
         }
       });
       return response.data;
