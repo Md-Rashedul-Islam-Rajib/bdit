@@ -8,6 +8,7 @@ import Pagination from '../components/Pagination'
 const Home: React.FC = () => {
  
   const axiosPublic = useAxiosPublic();
+  const [currentPage, setCurrentPage] = useState<number>(1);
 
   const {data : products = []} = useQuery({
     queryKey: ['all-products'],
