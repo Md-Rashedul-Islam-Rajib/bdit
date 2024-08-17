@@ -31,6 +31,10 @@ const Signup: React.FC = () => {
     if (password.length < 6) {
       return setError('Password must be at least 6 characters long');
     }
+
+    if (!/[A-Z]/.test(password)) {
+      return setError('Password must have at least one uppercase character');
+    }
   }
 
   return (
