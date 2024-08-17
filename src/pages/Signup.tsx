@@ -27,6 +27,10 @@ const Signup: React.FC = () => {
 
   const onSubmit: SubmitHandler<RegisterFormInput> = (data) => {
     const { email, password } = data;
+
+    if (password.length < 6) {
+      return setError('Password must be at least 6 characters long');
+    }
   }
 
   return (
