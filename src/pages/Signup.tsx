@@ -57,8 +57,8 @@ const Signup: React.FC = () => {
     <div>
       
       <div className="md:w-[25%] mx-auto p-4 border rounded-lg bg-white">
-        <form>
-          
+        <form onSubmit={handleSubmit(onSubmit)}>
+
         </form>
       </div>
 
