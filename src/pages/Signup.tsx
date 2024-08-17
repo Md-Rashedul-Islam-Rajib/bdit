@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 interface SignupFormInput {
-  
+  Name: string;
 }
 
 
