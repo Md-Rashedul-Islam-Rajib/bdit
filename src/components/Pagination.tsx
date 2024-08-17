@@ -18,7 +18,9 @@ const Pagination: React.FC<PaginationProps> = ({currentPage, totalPages,onPageCh
       </button>
 
       {Array.from({length: totalPages}, (_,index) =>(
-        
+        <button>
+            
+        </button>
       ))}
     </div>
   )
