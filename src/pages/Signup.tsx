@@ -26,7 +26,7 @@ const Signup: React.FC = () => {
   } = useForm<RegisterFormInput>();
 
   const onSubmit: SubmitHandler<RegisterFormInput> = (data) => {
-    
+    const { email, password } = data;
   }
 
   return (
