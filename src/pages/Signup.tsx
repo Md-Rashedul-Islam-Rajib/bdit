@@ -65,6 +65,7 @@ const Signup: React.FC = () => {
           <input 
           type="text"
           className="grow py-2 pl-3"
+          placeholder="Name"
           />
 
           </label>
