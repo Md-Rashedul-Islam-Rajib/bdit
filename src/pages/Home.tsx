@@ -25,6 +25,8 @@ const Home: React.FC = () => {
     keepPreviousData: true, 
   })
 
+  if (isLoading) return <div>Loading...</div>;
+
   console.log(products)
 
 
