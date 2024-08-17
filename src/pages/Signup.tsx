@@ -73,7 +73,7 @@ const Signup: React.FC = () => {
           )}
           </label>
 
-          <label className="input input-bordered flex">
+          <label className="input input-bordered flex items-center">
 
           </label>
 
