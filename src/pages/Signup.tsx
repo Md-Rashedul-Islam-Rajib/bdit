@@ -45,6 +45,7 @@ const Signup: React.FC = () => {
     .then(result => {
       console.log(result.user);
       logOutUser();
+      navigate('/login');
     })
   }
 
