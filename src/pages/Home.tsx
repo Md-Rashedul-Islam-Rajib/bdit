@@ -16,7 +16,7 @@ const Home: React.FC = () => {
     queryFn: async () => {
       const response = await axiosPublic.get("/", {
         params: {
-          
+          page: currentPage,
         }
       });
       return response.data;
