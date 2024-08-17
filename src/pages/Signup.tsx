@@ -39,6 +39,7 @@ const Signup: React.FC = () => {
     if (!/[a-z]/.test(password)) {
       return setError('Password must have at least one lowercase character');
     }
+    setError(null);
   }
 
   return (
