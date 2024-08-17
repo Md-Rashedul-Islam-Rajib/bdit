@@ -108,7 +108,7 @@ const Signup: React.FC = () => {
               clipRule="evenodd"
             />
           </svg>
-
+          type={showPassword ? "text" : "password"}
           </label>
 
         </form>
