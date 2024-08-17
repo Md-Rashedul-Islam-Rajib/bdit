@@ -8,7 +8,7 @@ interface PaginationProps {
 
 const Pagination: React.FC<PaginationProps> = ({currentPage, totalPages,onPageChange}) => {
   return (
-    <div>
+    <div className='flex'>
       
     </div>
   )
