@@ -9,3 +9,9 @@ export const SearchContext = createContext<SearchContextProps>({
     searchQuery: '',
     setSearchQuery: () => {},
 })
+
+
+export const SearchProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+
+    
+}
