@@ -9,7 +9,7 @@ interface CardProps {
     brand: string;
 }
 
-const Card: React.FC<CardProps> = (image,name,price,category,brand) => {
+const Card: React.FC<CardProps> = ({image,name,price,category,brand}) => {
     
   return (
     <div className='shadow-lg shadow-slate-400 p-5'>
