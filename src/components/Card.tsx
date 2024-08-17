@@ -2,6 +2,8 @@ import { TbCurrencyTaka } from "react-icons/tb";
 
 interface CardProps {
     image: string;
+    name: string;
+    price: number;
 }
 
 const Card = (image,name,price,category,brand) => {
