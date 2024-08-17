@@ -4,6 +4,7 @@ import userphoto from "../assets/user.png";
 import { FiSearch } from "react-icons/fi";
 import { useForm, SubmitHandler } from "react-hook-form";
 import  { AuthContext } from "../context/AuthProvider";
+import { SearchContext } from "../context/SearchProvider";
 
 interface SearchFormInput {
   searchQuery: string;
@@ -15,8 +16,11 @@ const Navbar: React.FC = () => {
 
     const { user, logOutUser } = useContext(AuthContext);
 
+    const { setSearchQuery } = useContext(SearchContext);
+    const { register, handleSubmit, reset } = useForm<SearchFormInput>();
+
   const onSubmit: SubmitHandler<SearchFormInput> = (data) => {
-    console.log(data.searchQuery);
+    setSearchQuery(data.searchQuery);
     reset();
   };
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +29,6 @@ const Navbar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
-  const { register, handleSubmit, reset } = useForm<SearchFormInput>();
   const handleLogout = () => {
     logOutUser()
     console.log("Logged out");
