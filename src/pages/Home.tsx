@@ -9,6 +9,7 @@ const Home: React.FC = () => {
  
   const axiosPublic = useAxiosPublic();
   const [currentPage, setCurrentPage] = useState<number>(1);
+  const [limit] = useState<number>(8);
 
   const {data : products = []} = useQuery({
     queryKey: ['all-products'],
