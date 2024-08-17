@@ -42,6 +42,9 @@ const Signup: React.FC = () => {
     setError(null);
 
     createUser(email, password)
+    .then(result => {
+      
+    })
   }
 
   return (
