@@ -64,7 +64,7 @@ const Signup: React.FC = () => {
           </svg>
           <input 
           type="text"
-          className="grow py-2"
+          className="grow py-2 pl-3"
           />
 
           </label>
