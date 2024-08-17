@@ -8,7 +8,7 @@ interface PaginationProps {
 
 const Pagination: React.FC<PaginationProps> = ({currentPage, totalPages,onPageChange}) => {
   return (
-    <div className='flex'>
+    <div className='flex justify-center'>
       
     </div>
   )
