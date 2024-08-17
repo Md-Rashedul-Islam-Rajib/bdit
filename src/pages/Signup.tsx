@@ -56,7 +56,7 @@ const Signup: React.FC = () => {
   return (
     <div>
       
-      <div className="md:w-[25%]">
+      <div className="md:w-[25%] mx-auto">
 
       </div>
 
