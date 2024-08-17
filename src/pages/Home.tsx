@@ -11,8 +11,14 @@ const Home: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [limit] = useState<number>(8);
 
+
+  if(searchQuery){
+    console.log(searchQuery)
+  }else {
+    console.log('no query from navbar')
+  }
   const { data, isLoading, error } = useQuery({
-    queryKey: ['products', currentPage],
+    queryKey: ['products', currentPage, limit, searchQuery],
     queryFn: async () => {
       const response = await axiosPublic.get("/", {
         params: {
@@ -20,6 +26,7 @@ const Home: React.FC = () => {
           limit: limit,
           search: searchQuery,
         },
+        
       });
       return response.data;
     },
