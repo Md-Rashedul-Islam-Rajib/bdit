@@ -6,5 +6,5 @@ interface SearchContextInput {
 }
 
 export const SearchContext = createContext<SearchContextProps>({
-    
+    searchQuery: '',
 })
