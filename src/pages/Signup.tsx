@@ -120,6 +120,9 @@ const Signup: React.FC = () => {
            >
             {showPassword ? <FaEyeSlash /> : <FaEye />}
            </span>
+           {errors.password && (
+            <span className="text-red-600 text-sm">Password is required</span>
+          )}
           </label>
 
         </form>
