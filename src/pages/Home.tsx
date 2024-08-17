@@ -43,7 +43,7 @@ const Home: React.FC = () => {
         />)}
       </div>
       <Pagination 
-      
+      currentPage={products.currentPage}
       />
     </main>
   )
