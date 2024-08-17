@@ -114,6 +114,9 @@ const Signup: React.FC = () => {
           placeholder="Password"
           {...register("password", { required: true })}
            />
+           <span>
+            
+           </span>
           </label>
 
         </form>
