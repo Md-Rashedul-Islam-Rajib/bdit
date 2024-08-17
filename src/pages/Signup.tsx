@@ -55,7 +55,7 @@ const Signup: React.FC = () => {
 
   return (
     <div>
-      <h3 className="text-center text-white py-2 font-bold">
+      <h3 className="text-center text-white py-2 font-bold text-3xl">
 
       </h3>
       <div className="md:w-[25%] mx-auto p-4 border rounded-lg bg-white">
