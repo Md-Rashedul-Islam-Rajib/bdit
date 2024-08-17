@@ -8,7 +8,7 @@ interface PaginationProps {
 
 const Pagination: React.FC<PaginationProps> = ({currentPage, totalPages,onPageChange}) => {
   return (
-    <div className='flex justify-center mt-4'>
+    <div className='flex justify-center my-4'>
       <button 
       onClick={()=> onPageChange(currentPage -1)}
       disabled={currentPage === 1}
