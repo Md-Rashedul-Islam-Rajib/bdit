@@ -112,6 +112,7 @@ const Signup: React.FC = () => {
           type={showPassword ? "text" : "password"}
           className="grow py-2 pl-3"
           placeholder="Password"
+          {...register("password", { required: true })}
            />
           </label>
 
