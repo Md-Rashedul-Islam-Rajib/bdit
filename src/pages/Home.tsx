@@ -45,6 +45,7 @@ const Home: React.FC = () => {
       <Pagination 
       currentPage={products.currentPage}
       totalPages={products.totalPages}
+      onPageChange={setCurrentPage}
       />
     </main>
   )
