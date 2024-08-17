@@ -128,7 +128,7 @@ const Signup: React.FC = () => {
           <div className="flex justify-center">
             <button
             type="submit"
-            className="btn w-[40%] py-1 rounded-lg font-bold bg-black"
+            className="btn w-[40%] py-1 rounded-lg font-bold bg-black text-white"
             >
 
             </button>
