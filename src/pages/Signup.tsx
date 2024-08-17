@@ -47,6 +47,10 @@ const Signup: React.FC = () => {
       logOutUser();
       navigate('/login');
     })
+    .catch(error => {
+      console.error(error);
+        setError(error.message);
+    })
   }
 
   return (
