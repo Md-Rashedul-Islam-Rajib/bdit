@@ -44,6 +44,7 @@ const Home: React.FC = () => {
       </div>
       <Pagination 
       currentPage={products.currentPage}
+      totalPages={products.totalPages}
       />
     </main>
   )
