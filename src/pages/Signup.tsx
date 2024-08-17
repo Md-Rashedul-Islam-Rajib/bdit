@@ -110,6 +110,7 @@ const Signup: React.FC = () => {
           </svg>
           <input 
           type={showPassword ? "text" : "password"}
+          className="grow"
            />
           </label>
 
