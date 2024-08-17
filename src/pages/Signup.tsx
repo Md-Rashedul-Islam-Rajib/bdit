@@ -138,7 +138,7 @@ const Signup: React.FC = () => {
         </form>
 
           <div className="flex justify-between font-semibold my-4">
-
+            <p>Already have an account?</p>
           </div>
 
       </div>
