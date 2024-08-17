@@ -21,7 +21,8 @@ const Home: React.FC = () => {
         }
       });
       return response.data;
-    }
+    },
+    keepPreviousData: true, 
   })
 
   console.log(products)
