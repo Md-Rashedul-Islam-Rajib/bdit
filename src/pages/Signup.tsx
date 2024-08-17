@@ -118,7 +118,7 @@ const Signup: React.FC = () => {
            onClick={() => setShowPassword(!showPassword)}
            className="cursor-pointer"
            >
-
+            {showPassword ? <FaEyeSlash /> : <FaEye />}
            </span>
           </label>
 
