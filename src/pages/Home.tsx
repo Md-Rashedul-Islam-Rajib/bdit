@@ -26,7 +26,7 @@ const Home: React.FC = () => {
   })
 
   if (isLoading) return <div>Loading...</div>;
-
+  if (error) return <div>Error loading products</div>;
   console.log(products)
 
 
