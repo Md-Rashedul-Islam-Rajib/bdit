@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   const [limit] = useState<number>(8);
 
   const {data : products = []} = useQuery({
-    queryKey: ['all-products'],
+    queryKey: ['products', currentPage],
     queryFn: async () => {
       const response = await axiosPublic.get("/");
       return response.data;
