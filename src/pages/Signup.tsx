@@ -25,6 +25,10 @@ const Signup: React.FC = () => {
     formState: { errors },
   } = useForm<RegisterFormInput>();
 
+  const onSubmit: SubmitHandler<RegisterFormInput> = (data) => {
+    
+  }
+
   return (
     <div>
       Signup
