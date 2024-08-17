@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [limit] = useState<number>(8);
 
-  const {data : products = []} = useQuery({
+  const {data: products, isLoading, error = []} = useQuery({
     queryKey: ['products', currentPage],
     queryFn: async () => {
       const response = await axiosPublic.get("/", {
@@ -33,7 +33,7 @@ const Home: React.FC = () => {
   return (
     <main>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 m-6'>
-        {products.map((product: object) => <Card 
+        {products.map((product:any) => <Card 
         key={product.id}
         name={product.name}
         image={product.image}
@@ -42,6 +42,9 @@ const Home: React.FC = () => {
         brand={product.brand}
         />)}
       </div>
+      <Pagination 
+      
+      />
     </main>
   )
 }
