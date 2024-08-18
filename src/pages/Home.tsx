@@ -68,7 +68,7 @@ const Home: React.FC = () => {
   return (
     <main>
 
-    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-between items-center m-6'>
+    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-between items-center gap-4 m-6'>
 
       <select
       className='border border-gray-600 rounded-lg p-2'
