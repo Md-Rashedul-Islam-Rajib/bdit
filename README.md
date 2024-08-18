@@ -33,7 +33,7 @@ The BDIT is a single-page application (SPA) built with React.js and Vite for a f
 2. **Navigate to the project directory**:
 
     ```bash
-    cd prodigy-picks-client
+    cd bdit
     ```
 
 3. **Install dependencies**:
