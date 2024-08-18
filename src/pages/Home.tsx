@@ -92,6 +92,7 @@ const Home: React.FC = () => {
       value={selectedCategory}
       onChange={(e) => setSelectedCategory(e.target.value)}
       >
+        <option value=""></option>
 
       </select>
 
