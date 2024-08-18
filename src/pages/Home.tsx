@@ -100,7 +100,7 @@ const Home: React.FC = () => {
         <option value="GPU">Graphics Processing Unit</option>
         <option value="CPU Cooler">CPU Cooler</option>
         <option value="motherboard">Motherboard</option>
-        <option value="processor">Motherboard</option>
+        <option value="processor">Processor</option>
 
       </select>
 
