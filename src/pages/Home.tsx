@@ -115,7 +115,7 @@ const Home: React.FC = () => {
         <option value="price_asc">Price: Low to High</option>
         <option value="price_desc">Price: High to Low</option>
         <option value="date_desc">Date Added: Newest First</option>
-        <option value="date_desc">Date Added: Newest First</option>
+        <option value="date_asc">Date Added: Newest First</option>
       </select>
 
     </div>
