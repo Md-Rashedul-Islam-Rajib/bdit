@@ -124,6 +124,7 @@ const Home: React.FC = () => {
         <input 
         type="number"
         placeholder="Max Price"
+        value={maxPrice}
         />
 
       </div>
