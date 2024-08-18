@@ -106,7 +106,11 @@ const Home: React.FC = () => {
 
       </select>
 
-      <select></select>
+      <select
+      
+      >
+        
+      </select>
 
     </div>
 
