@@ -111,7 +111,7 @@ const Home: React.FC = () => {
       value={sortOption}
       onChange={(e) => setSortOption(e.target.value)}
       >
-
+        <option value=""></option>
       </select>
 
     </div>
