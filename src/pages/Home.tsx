@@ -23,24 +23,24 @@ const Home: React.FC = () => {
   const { searchQuery } = useContext(SearchContext);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [limit] = useState<number>(8);
-  const [selectedBrand, setSelectedBrand] = useState<string>('');
-  const [selectedCategory, setSelectedCategory] = useState<string>('');
+  // const [selectedBrand, setSelectedBrand] = useState<string>('');
+  // const [selectedCategory, setSelectedCategory] = useState<string>('');
 
   if(searchQuery){
     console.log(searchQuery)
   }else {
     console.log('no query from navbar')
   }
-  const { data, isLoading, error } = useQuery({
-    queryKey: ['products', currentPage, limit, searchQuery,selectedBrand,selectedCategory],
+  const { data={}, isLoading, error } = useQuery({
+    queryKey: ['products', currentPage, limit, searchQuery],
     queryFn: async () => {
       const response = await axiosPublic.get("/", {
         params: {
           page: currentPage,
           limit: limit,
           search: searchQuery,
-          brand: selectedBrand,
-          category: selectedCategory,
+          // brand: selectedBrand,
+          // category: selectedCategory,
         },
         
       });
@@ -49,15 +49,20 @@ const Home: React.FC = () => {
 
   });
 
+  
+  
+  const { products, currentPage: c, totalPages } = data;
+  const fetchedPage = parseInt(c);
+  console.log({fetchedPage,totalPages})
+
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error loading products</div>;
 
-  const { products, currentPage: fetchedPage, totalPages } = data;
 
   return (
     <main>
 
-    <div className='flex justify-between items-center m-6'>
+    {/* <div className='flex justify-between items-center m-6'>
 
       <select
       className='border border-gray-600 rounded-lg p-2'
@@ -66,11 +71,11 @@ const Home: React.FC = () => {
       >
         <option value=''>All Brands</option>
         <option value='AMD'>Advanced Micro Device</option>
-        <option value='AMD'>Advanced Micro Device</option>
+        <option value='intel'>Intel</option>
 
       </select>
 
-    </div>
+    </div> */}
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 m-6'>
         {products?.map((product:Product) => (

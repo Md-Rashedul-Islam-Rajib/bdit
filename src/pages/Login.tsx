@@ -46,7 +46,7 @@ const Login: React.FC = () => {
         navigate(destination);
       })
       .catch((error:ErrorObject) => {
-        console.error(error.message); // You can also display this error message to the user
+        console.error(error?.message); // You can also display this error message to the user
       });
   };
 
@@ -57,7 +57,7 @@ const Login: React.FC = () => {
         navigate(destination);
       })
       .catch((error:ErrorObject) => {
-        console.error(error.message); // You can also display this error message to the user
+        console.error(error?.message); // You can also display this error message to the user
       });
   };
 
@@ -68,7 +68,7 @@ const Login: React.FC = () => {
         navigate(destination);
       })
       .catch((error:ErrorObject) => {
-        console.error(error.message); // You can also display this error message to the user
+        console.error(error?.message); // You can also display this error message to the user
       });
   };
 

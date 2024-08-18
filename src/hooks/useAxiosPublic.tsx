@@ -3,7 +3,7 @@ import axios, { AxiosInstance } from 'axios'
 const axiosPublic : AxiosInstance = axios.create(
     {
         // baseURL: "https://bditserver-eh3029ivi-rashedul-islam-rajibs-projects.vercel.app/"
-        baseURL: "http://localhost:5000"
+        baseURL: "https://bditserver.vercel.app"
     }
 );
 
