@@ -74,6 +74,7 @@ const Home: React.FC = () => {
         <option value='maxsun'>Maxsun</option>
         <option value='seagate'>Seagate</option>
         <option value='samsung'>Samsung</option>
+        <option value='samsung'>Samsung</option>
         <option value='NZXT'>NZXT</option>
         <option value='asus'>Asus</option>
         <option value='EKWB'>EKWB</option>
