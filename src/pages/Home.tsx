@@ -106,7 +106,7 @@ const Home: React.FC = () => {
 
       </select>
 
-      <select name="" id=""></select>
+      <select></select>
 
     </div>
 
