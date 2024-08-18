@@ -121,7 +121,10 @@ const Home: React.FC = () => {
         onChange={(e) => setMinPrice(e.target.value ? parseInt(e.target.value) : 0)}
         />
 
-        <input type="number" />
+        <input 
+        type="number"
+        placeholder="Max Price"
+        />
 
       </div>
 
