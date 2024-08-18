@@ -57,7 +57,7 @@ const Home: React.FC = () => {
   return (
     <main>
 
-    <div className='flex justify-between items-center'>
+    <div className='flex justify-between items-center m-6'>
 
     </div>
 
