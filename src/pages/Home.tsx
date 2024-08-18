@@ -115,7 +115,7 @@ const Home: React.FC = () => {
       >
         <input 
         type="number"
-        
+        placeholder="Min Price"
         />
 
       </div>
