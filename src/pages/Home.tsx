@@ -39,7 +39,7 @@ const Home: React.FC = () => {
           page: currentPage,
           limit: limit,
           search: searchQuery,
-          // brand: selectedBrand,
+          brand: selectedBrand,
           // category: selectedCategory,
         },
         
