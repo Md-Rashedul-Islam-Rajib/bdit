@@ -114,6 +114,7 @@ const Home: React.FC = () => {
         <option value="">Sort</option>
         <option value="price_asc">Price: Low to High</option>
         <option value="price_desc">Price: High to Low</option>
+        <option value="price_desc">Price: High to Low</option>
       </select>
 
     </div>
