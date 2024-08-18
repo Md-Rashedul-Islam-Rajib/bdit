@@ -125,6 +125,7 @@ const Home: React.FC = () => {
         type="number"
         placeholder="Max Price"
         value={maxPrice}
+        onChange={(e) => setMaxPrice(e.target.value ? parseInt(e.target.value) : '')}
         />
 
       </div>
