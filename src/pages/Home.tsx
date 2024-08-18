@@ -64,7 +64,7 @@ const Home: React.FC = () => {
       value={selectedBrand}
       onChange={(e) => setSelectedBrand(e.target.value)}
       >
-        <option></option>
+        <option>All Brands</option>
       </select>
 
     </div>
