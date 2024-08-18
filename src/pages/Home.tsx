@@ -4,6 +4,7 @@ import useAxiosPublic from "../hooks/useAxiosPublic";
 import Pagination from '../components/Pagination';
 import { useContext, useState } from 'react';
 import { SearchContext } from '../context/SearchProvider';
+import Loader from '../components/Loader';
 
 
 interface Product {
