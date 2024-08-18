@@ -110,8 +110,10 @@ const Home: React.FC = () => {
 
       </select>
 
-      <div>
-        
+      <div
+      className='flex'
+      >
+
       </div>
 
       <select
