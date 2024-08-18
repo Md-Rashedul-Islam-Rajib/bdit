@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Prodigy Picks client is a single-page application (SPA) built with React.js and Vite for a full-stack e-commerce platform. The application provides functionalities for searching, filtering, sorting, and paginating products, as well as user authentication and cart operations.
+The BDIT is a single-page application (SPA) built with React.js and Vite for a full-stack e-commerce platform. The application provides functionalities for searching, filtering, sorting, and paginating products, as well as user authentication and cart operations.
 
 ## Features
 
