@@ -32,7 +32,7 @@ const Home: React.FC = () => {
     console.log('no query from navbar')
   }
   const { data, isLoading, error } = useQuery({
-    queryKey: ['products', currentPage, limit, searchQuery,selectedBrand],
+    queryKey: ['products', currentPage, limit, searchQuery,selectedBrand,selectedCategory],
     queryFn: async () => {
       const response = await axiosPublic.get("/", {
         params: {
