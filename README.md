@@ -1,50 +1,105 @@
-# React + TypeScript + Vite
+# BDIT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## [Live Link](https://prodigy-picks-nhb.vercel.app)
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Prodigy Picks client is a single-page application (SPA) built with React.js and Vite for a full-stack e-commerce platform. The application provides functionalities for searching, filtering, sorting, and paginating products, as well as user authentication and cart operations.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Pagination**: Efficiently load and navigate through product pages.
+- **Searching**: Search for products by name.
+- **Categorization**: Filter products by brand name, category, and price range.
+- **Sorting**: Sort products by price (low to high, high to low), date added (newest first, oldest first) and ratings.
+- **Authentication**: Google and email/password authentication via Firebase.
+- **Cart Operations**: Add and remove products from the cart.
 
-- Configure the top-level `parserOptions` property like this:
+## Run the Project Locally
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Prerequisites
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Node.js
+- npm or yarn
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Setup
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Clone the repository**:
+
+    ```bash
+    git clone https://github.com/nazmul-nhb/prodigy-picks-client
+    ```
+
+2. **Navigate to the project directory**:
+
+    ```bash
+    cd prodigy-picks-client
+    ```
+
+3. **Install dependencies**:
+
+    ```bash
+    npm install
+    ```
+
+    or, if you prefer yarn:
+
+    ```bash
+    yarn install
+    ```
+
+4. **Create a `.env` file** in the root directory of the project and add your environment variables.
+
+    ```env
+    VITE_FIREBASE_API_KEY=your-firebase-api-key
+    VITE_FIREBASE_AUTH_DOMAIN=your-firebase-auth-domain
+    VITE_FIREBASE_PROJECT_ID=your-firebase-project-id
+    VITE_FIREBASE_STORAGE_BUCKET=your-firebase-storage-bucket
+    VITE_FIREBASE_MESSAGING_SENDER_ID=your-firebase-messaging-sender-id
+    VITE_FIREBASE_APP_ID=your-firebase-app-id
+    ```
+
+5. **Start the development server**:
+
+    ```bash
+    npm run dev
+    ```
+
+    or, if you are using yarn:
+
+    ```bash
+    yarn dev
+    ```
+
+## Features Implementation
+
+### Pagination
+
+- Implemented to handle large sets of product data efficiently.
+- Provides navigation controls (Next, Previous) and page number indicators.
+
+### Searching
+
+- Allows users to search for products by name with real-time updates.
+
+### Categorization
+
+- Products can be filtered by brand name, category, and price range.
+- Supports multiple filters applied simultaneously.
+
+### Sorting
+
+- Users can sort products by price, date added and ratings.
+- Sorting options include:
+  - Price: Low to High, High to Low
+  - Date Added: Newest first
+  - Ratings: Low to High, High to Low (Extra)
+
+### Authentication
+
+- Integrated Google Authentication using Firebase.
+- Implemented Email and Password Authentication using Firebase.
+
+### Cart Operations (Extra Feature)
+
+- Users can add and remove products from their cart.
