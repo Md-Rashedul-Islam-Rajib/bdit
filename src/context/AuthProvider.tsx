@@ -7,24 +7,24 @@ import {
   signInWithPopup,
   signOut,
   User,
+  UserCredential,
 } from "firebase/auth";
 import React, { createContext, useEffect, useState, ReactNode } from "react";
 import auth from "../firebase/firebase.config";
 
-interface AuthContextProps {
+export interface AuthContextProps {
   user: User | null;
   loading: boolean;
-  createUser: (email: string, password: string) => Promise<void>;
-  logInUser: (email: string, password: string) => Promise<void>;
+  createUser: (email: string, password: string) => Promise<UserCredential>;
+  logInUser: (email: string, password: string) => Promise<UserCredential>;
   logOutUser: () => Promise<void>;
-  googleLogin: () => Promise<void>;
-  githubLogin: () => Promise<void>;
+  googleLogin: () => Promise<UserCredential>;
+  githubLogin: () => Promise<UserCredential>;
   setUser: React.Dispatch<React.SetStateAction<User | null>>;
 }
 
-export const AuthContext = createContext<AuthContextProps | undefined>(
-  undefined
-);
+
+export const AuthContext = createContext<AuthContextProps | null>(null);
 
 interface AuthProviderProps {
   children: ReactNode;

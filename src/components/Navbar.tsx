@@ -14,10 +14,17 @@ interface SearchFormInput {
 
 const Navbar: React.FC = () => {
 
-    const { user, logOutUser } = useContext(AuthContext);
+  const auth = useContext(AuthContext);
+
+  if(!auth) {
+    throw new Error ("context is not present here")
+  }
+
+
+    const { user, logOutUser } = auth;
 
     const { setSearchQuery } = useContext(SearchContext);
-    const { register, handleSubmit, reset } = useForm<SearchFormInput>();
+    const { register, handleSubmit} = useForm<SearchFormInput>();
 
   const onSubmit: SubmitHandler<SearchFormInput> = (data) => {
     setSearchQuery(data.searchQuery);

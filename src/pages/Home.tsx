@@ -5,12 +5,25 @@ import Pagination from '../components/Pagination';
 import { useContext, useState } from 'react';
 import { SearchContext } from '../context/SearchProvider';
 
+
+interface Product {
+  _id: string;
+  name: string;
+  image: string;
+  description: string;
+  price: number;
+  brand: string;
+  category: string;
+  rating: string;
+  created_time: string;
+}
+
 const Home: React.FC = () => {
   const axiosPublic = useAxiosPublic();
   const { searchQuery } = useContext(SearchContext);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [limit] = useState<number>(8);
-
+  const [selectedBrand, setSelectedBrand] = useState<string>('');
 
   if(searchQuery){
     console.log(searchQuery)
@@ -30,7 +43,7 @@ const Home: React.FC = () => {
       });
       return response.data;
     },
-    keepPreviousData: true,
+
   });
 
   if (isLoading) return <div>Loading...</div>;
@@ -41,7 +54,7 @@ const Home: React.FC = () => {
   return (
     <main>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 m-6'>
-        {products.map((product: any) => (
+        {products?.map((product:Product) => (
           <Card
             key={product._id} // Assuming _id is the identifier field in your MongoDB collection
             name={product.name}

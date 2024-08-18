@@ -5,7 +5,7 @@ interface SearchContextInput {
     setSearchQuery: (query: string) => void;
 }
 
-export const SearchContext = createContext<SearchContextProps>({
+export const SearchContext = createContext<SearchContextInput>({
     searchQuery: '',
     setSearchQuery: () => {},
 })

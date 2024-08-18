@@ -4,6 +4,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaEye, FaEyeSlash, FaGithub } from "react-icons/fa";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { AuthContext } from "../context/AuthProvider.tsx";
+import { UserCredential } from "firebase/auth";
 // import toast, { Toaster } from "react-hot-toast";
 
 interface LoginFormInputs {
@@ -11,11 +12,21 @@ interface LoginFormInputs {
   password: string;
 }
 
+interface ErrorObject extends Error{
+message: string;
+
+}
+
 const Login: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
 
-  const { logInUser, setUser, googleLogin, githubLogin } =
-    useContext(AuthContext);
+  const auth = useContext(AuthContext);
+
+  if(!auth) {
+    throw new Error ("context is not present here")
+  }
+
+  const { logInUser, setUser, googleLogin, githubLogin } = auth;
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -30,33 +41,33 @@ const Login: React.FC = () => {
   const onSubmit: SubmitHandler<LoginFormInputs> = (data) => {
     const { email, password } = data;
     logInUser(email, password)
-      .then((result) => {
+      .then((result: UserCredential) => {
         setUser(result.user);
         navigate(destination);
       })
-      .catch((error) => {
+      .catch((error:ErrorObject) => {
         console.error(error.message); // You can also display this error message to the user
       });
   };
 
   const handleGoogle = () => {
     googleLogin()
-      .then((result) => {
+      .then((result: UserCredential) => {
         setUser(result.user);
         navigate(destination);
       })
-      .catch((error) => {
+      .catch((error:ErrorObject) => {
         console.error(error.message); // You can also display this error message to the user
       });
   };
 
   const handleGithub = () => {
     githubLogin()
-      .then((result) => {
+      .then((result:UserCredential) => {
         setUser(result.user);
         navigate(destination);
       })
-      .catch((error) => {
+      .catch((error:ErrorObject) => {
         console.error(error.message); // You can also display this error message to the user
       });
   };
