@@ -117,6 +117,7 @@ const Home: React.FC = () => {
         type="number"
         placeholder="Min Price"
         className='border border-gray-600 rounded-lg p-2'
+        value={minPrice === 0 ? '' : minPrice}
         />
 
       </div>
