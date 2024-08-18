@@ -34,6 +34,8 @@ const Home: React.FC = () => {
   }else {
     console.log('no query from navbar')
   }
+
+  
   const { data={}, isLoading, error } = useQuery({
     queryKey: ['products', currentPage, limit,sortOption,minPrice,maxPrice, searchQuery,selectedBrand,selectedCategory],
     queryFn: async () => {
