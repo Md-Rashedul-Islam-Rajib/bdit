@@ -90,6 +90,7 @@ const Home: React.FC = () => {
       <select
       className='border border-gray-600 rounded-lg p-2'
       value={selectedCategory}
+      onChange={(e) => setSelectedCategory(e.target.value)}
       >
 
       </select>
