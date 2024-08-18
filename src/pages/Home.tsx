@@ -121,6 +121,8 @@ const Home: React.FC = () => {
         onChange={(e) => setMinPrice(e.target.value ? parseInt(e.target.value) : 0)}
         />
 
+        <input type="text" />
+
       </div>
 
       <select
