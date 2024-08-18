@@ -3,44 +3,40 @@ import React from 'react';
 const Loader: React.FC = () => {
   return (
     <div className="flex justify-center items-center">
-       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="200" height="200" style={{ shapeRendering: 'auto', display: 'block', background: 'rgb(30, 44, 36)' }}>
-        <g>
-          <style type="text/css">
-            {`.st0{opacity:0.8;fill:none;stroke-width:0.4811;stroke-miterlimit:10;}`}
-          </style>
-          <g style={{ opacity: 0.5 }}>
-            <polygon points="41.5 62 30 62 24.2 72 30 82 41.5 82 47.3 72" strokeWidth="0.5" fill="none" opacity="0.8" stroke="#799b79"></polygon>
-            <polygon points="58.8 72 47.3 72 41.5 82 47.3 92 58.8 92 64.6 82" strokeWidth="0.5" fill="none" opacity="0.8" stroke="#799b79"></polygon>
-            <polygon points="76.2 62 64.6 62 58.8 72 64.6 82 76.2 82 81.9 72" strokeWidth="0.5" fill="none" opacity="0.8" stroke="#799b79"></polygon>
-            <polygon points="41.5 42 30 42 24.2 52 30 62 41.5 62 47.3 52" strokeWidth="0.5" fill="none" opacity="0.8" stroke="#799b79"></polygon>
-            <polygon points="58.8 12 47.3 12 41.5 22 47.3 32 58.8 32 64.6 22" strokeWidth="0.5" fill="none" opacity="0.8" stroke="#799b79"></polygon>
-            <polygon points="58.8 32 47.3 32 41.5 42 47.3 52 58.8 52 64.6 42" strokeWidth="0.5" fill="none" opacity="0.8" stroke="#799b79"></polygon>
-            <polygon points="76.2 22 64.6 22 58.8 32 64.6 42 76.2 42 81.9 32" strokeWidth="0.5" fill="none" opacity="0.8" stroke="#799b79"></polygon>
-          </g>
-          <g transform="matrix(-0.3090171210157801,0.9510564751470434,-0.9510564751470434,-0.3090171210157801,118.91662013863075,17.60203027926424)">
-            <path d="M48.3 56.8l-4.4 1.5c-0.9-1.3-1.5-2.7-1.7-4.3l-1.9 0.3c0.5 2.6 1.7 5 3.6 6.9c1.9 1.9 4.3 3.1 6.9 3.6 l0.3-1.9c-1.6-0.3-3-0.9-4.3-1.7L48.3 56.8z" fill="#2accfc"></path>
-            <path d="M57.8 47.2l4.4-1.5c0.9 1.3 1.5 2.7 1.7 4.3l1.9-0.3c-0.5-2.6-1.7-5-3.6-6.9c-1.9-1.9-4.3-3.1-6.9-3.6L55 41.1 c1.6 0.3 3 0.9 4.3 1.7L57.8 47.2z" fill="#2accfc"></path>
-            <path d="M62.2 58.2l-4.4-1.5l1.5 4.4C58 62 56.5 62.6 55 62.9l0.3 1.9c2.6-0.5 5-1.7 6.9-3.6c1.9-1.9 3.1-4.3 3.6-6.9 L64 53.9C63.7 55.5 63.1 56.9 62.2 58.2z" fill="#2accfc"></path>
-            <path d="M43.9 42.8c-1.9 1.9-3.1 4.3-3.6 6.9l1.9 0.3c0.3-1.6 0.9-3 1.7-4.3l4.4 1.5l-1.5-4.4c1.3-0.9 2.7-1.5 4.3-1.7 l-0.3-1.9C48.2 39.7 45.8 40.9 43.9 42.8z" fill="#2accfc"></path>
-          </g>
-          <g opacity="0.8" transform="matrix(-0.8090168378382373,0.5877854677467106,-0.5877854677467106,-0.8090168378382373,126.55851231529323,62.878627991397195)">
-            <path d="M36 61.9c-1.7-3-2.7-6.4-2.7-9.9c0-10.9 8.8-19.7 19.7-19.7v1c-10.3 0-18.8 8.4-18.8 18.8 c0 3.3 0.9 6.5 2.5 9.4L36 61.9z" fill="#2accfc"></path>
-          </g>
-          <g opacity="0.8" transform="matrix(0.8539928904009413,-0.5202846751007048,0.5202846751007048,0.8539928904009413,-19.30708196177835,35.200755269993486)">
-            <path d="M57 75.3l-0.5-3c9.9-1.7 17.2-10.2 17.2-20.3c0-11.4-9.2-20.6-20.6-20.6S32.5 40.6 32.5 52 c0 1.6 0.2 3.2 0.5 4.7l-3 0.7c-0.4-1.8-0.6-3.6-0.6-5.4c0-13.1 10.6-23.7 23.7-23.7S76.7 38.9 76.7 52 C76.7 63.6 68.4 73.4 57 75.3z" fill="#2accfc"></path>
-          </g>
-          <g transform="matrix(-0.8090168378382373,0.5877854677467106,-0.5877854677467106,-0.8090168378382373,126.55851231529323,62.878627991397195)">
-            <path d="M90.5 45.4c-1.5-8.8-6.2-16.8-13-22.5l0 0c-3.4-2.9-7.3-5.1-11.4-6.6s-8.5-2.3-13-2.3v2.4v1.4v2.4 c3.7 0 7.4 0.6 10.9 1.9l0.8-2.3c0 0 0 0 0 0c3.7 1.4 7.2 3.4 10.3 5.9l1.2-1.6c0 0 0 0 0 0c4.8 4 8.4 9.2 10.4 15.1l0.6-2.4l0 0 l0.1 0.3c1.3 4.2 1.9 8.6 1.9 13v1.4v1.4v1.4c0 3.8-0.5 7.6-1.6 11.2l2.3-0.8c0.9-3 1.3-6.2 1.3-9.3v-1.4 C91.5 52.2 91.1 48.7 90.5 45.4z" fill="#2accfc"></path>
-          </g>
-          <g opacity="0.5" transform="matrix(1.7948967369013985e-8,-1.2,1.2,-1.7948967369013985e-8,43.3999997604657,92.85000002384277)">
-            <path d="M61.7 83c11-11 11-28.7 0-39.7l-1.1 1.1c10.4 10.4 10.4 27.3 0 37.7S33.3 93.4 22.9 83 c-10.4-10.4-10.4-27.3 0-37.7c5-5 11.6-7.8 18.8-7.8v-1.6c-7.6 0-14.8 2.9-20.1 8.3C9.2 54.4 9.2 72 20.1 82.9S61.7 94 72.6 83 L61.7 83z" fill="#2accfc"></path>
-          </g>
-          <g opacity="0.5" transform="matrix(1.4,0,0,1.4,-14.6399997133538,-10.919999819159508)">
-            <path d="M31.6 47.8L33.1 48.8 29.9 54.4 34.2 57.1 34.2 58.8 28.2 55 31.6 47.8z" fill="#2accfc"></path>
-            <path d="M61.4 31.8L60.4 33.3 54.8 30.1 52.1 34.4 50.4 34.4 54.2 28.4 61.4 31.8z" fill="#2accfc"></path>
-            <path d="M76.6 61.4L75.1 60.4 78.3 54.8 74 52.1 74 50.4 80 54.2 76.6 61.4z" fill="#2accfc"></path>
-            <path d="M47.4 76.6L48.9 75.1 54.5 78.3 57.2 74 58.9 74 55.1 80 47.9 76.6z" fill="#2accfc"></path>
-          </g>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="xMidYMid"
+        width="100"
+        height="100"
+        className="animate-spin"
+      >
+        <g transform="matrix(1,0,0,1,20,20)">
+          <rect fill="#e15b64" height="30" width="30" y="-15" x="-15" transform="matrix(0.29183778166770935,0,0,0.29183778166770935,0,0)" />
+        </g>
+        <g transform="matrix(1,0,0,1,50,20)">
+          <rect fill="#f47e60" height="30" width="30" y="-15" x="-15" transform="matrix(0.29183322191238403,0,0,0.29183322191238403,0,0)" />
+        </g>
+        <g transform="matrix(1,0,0,1,80,20)">
+          <rect fill="#f8b26a" height="30" width="30" y="-15" x="-15" transform="matrix(0.5401629209518433,0,0,0.5401629209518433,0,0)" />
+        </g>
+        <g transform="matrix(1,0,0,1,20,50)">
+          <rect fill="#f47e60" height="30" width="30" y="-15" x="-15" transform="matrix(0.29183322191238403,0,0,0.29183322191238403,0,0)" />
+        </g>
+        <g transform="matrix(1,0,0,1,50,50)">
+          <rect fill="#f8b26a" height="30" width="30" y="-15" x="-15" transform="matrix(0.5401629209518433,0,0,0.5401629209518433,0,0)" />
+        </g>
+        <g transform="matrix(1,0,0,1,80,50)">
+          <rect fill="#abbd81" height="30" width="30" y="-15" x="-15" transform="matrix(0.8190279006958008,0,0,0.8190279006958008,0,0)" />
+        </g>
+        <g transform="matrix(1,0,0,1,20,80)">
+          <rect fill="#f8b26a" height="30" width="30" y="-15" x="-15" transform="matrix(0.5401629209518433,0,0,0.5401629209518433,0,0)" />
+        </g>
+        <g transform="matrix(1,0,0,1,50,80)">
+          <rect fill="#abbd81" height="30" width="30" y="-15" x="-15" transform="matrix(0.8190279006958008,0,0,0.8190279006958008,0,0)" />
+        </g>
+        <g transform="matrix(1,0,0,1,80,80)">
+          <rect fill="#849b87" height="30" width="30" y="-15" x="-15" transform="matrix(1,0,0,1,0,0)" />
         </g>
       </svg>
     </div>
