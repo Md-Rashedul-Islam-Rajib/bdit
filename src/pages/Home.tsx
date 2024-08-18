@@ -116,7 +116,7 @@ const Home: React.FC = () => {
         <input 
         type="number"
         placeholder="Min Price"
-        className='border'
+        className='border border-gray-600'
         />
 
       </div>
