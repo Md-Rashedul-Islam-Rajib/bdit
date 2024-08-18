@@ -95,6 +95,7 @@ const Home: React.FC = () => {
         <option value="">All Category</option>
         <option value="monitor">Monitor</option>
         <option value="SSD">Solid State Drive</option>
+        <option value="SSD">Solid State Drive</option>
 
       </select>
 
