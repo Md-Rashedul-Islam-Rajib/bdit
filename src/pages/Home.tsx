@@ -94,6 +94,7 @@ const Home: React.FC = () => {
       >
         <option value="">All Category</option>
         <option value="monitor">Monitor</option>
+        <option value="monitor">Monitor</option>
 
       </select>
 
