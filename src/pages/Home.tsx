@@ -7,7 +7,7 @@ import { SearchContext } from '../context/SearchProvider';
 
 
 interface Product {
-  _id: string;
+  id: string;
   name: string;
   image: string;
   description: string;
