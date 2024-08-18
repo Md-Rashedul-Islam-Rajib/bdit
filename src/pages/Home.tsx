@@ -125,7 +125,7 @@ const Home: React.FC = () => {
         type="number"
         placeholder="Max Price"
         value={maxPrice}
-        className='border border-gray-600 rounded-lg'
+        className='border border-gray-600 rounded-lg p-2'
         onChange={(e) => setMaxPrice(e.target.value ? parseInt(e.target.value) : '')}
         />
 
