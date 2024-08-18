@@ -27,6 +27,7 @@ const Home: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('');
   const [sortOption, setSortOption] = useState<string>('');
   const [minPrice, setMinPrice] = useState<number | '0'>(0);
+  const [maxPrice, setMaxPrice] = useState<number | ''>('');
 
   if(searchQuery){
     console.log(searchQuery)
