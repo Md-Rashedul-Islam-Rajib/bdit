@@ -111,7 +111,7 @@ const Home: React.FC = () => {
       </select>
 
       <div
-      className='flex items-center'
+      className='flex items-center gap-2'
       >
 
       </div>
