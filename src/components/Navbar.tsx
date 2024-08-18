@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="flex flex-wrap items-center justify-between bg-black p-4">
+    <nav className="flex flex-wrap items-center justify-between bg-black py-4 md:p-4">
       <div className="text-green-600 text-2xl md:text-3xl lg:text-4xl font-bold cursor-pointer">
         <Link to="/">
           BD<span className="text-red-600">IT</span>
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
           >
             <input
               type="text"
-              className="w-full p-2 rounded bg-gray-200 focus:bg-white focus:outline-none"
+              className="w-1/2 md:w-full p-2 rounded bg-gray-200 focus:bg-white focus:outline-none"
               placeholder="Search...."
               {...register("searchQuery", { required: true })}
             />

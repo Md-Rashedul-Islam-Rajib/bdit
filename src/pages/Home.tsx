@@ -65,7 +65,7 @@ const Home: React.FC = () => {
   return (
     <main>
 
-    <div className='grid grid-cols-1 justify-between items-center m-6'>
+    <div className='grid grid-cols-1 md:grid-cols-3 justify-between items-center m-6'>
 
       <select
       className='border border-gray-600 rounded-lg p-2'
@@ -115,7 +115,7 @@ const Home: React.FC = () => {
         <input 
         type="number"
         placeholder="Min Price"
-        className='border border-gray-600 rounded-lg p-2'
+        className='border border-gray-600 rounded-lg py-2 px-1 w-1/2'
         value={minPrice === 0 ? '' : minPrice}
         onChange={(e) => setMinPrice(e.target.value ? parseInt(e.target.value) : 0)}
         />
@@ -124,7 +124,7 @@ const Home: React.FC = () => {
         type="number"
         placeholder="Max Price"
         value={maxPrice}
-        className='border border-gray-600 rounded-lg p-2'
+        className='border border-gray-600 rounded-lg py-2 px-1 w-1/2'
         onChange={(e) => setMaxPrice(e.target.value ? parseInt(e.target.value) : '')}
         />
 
