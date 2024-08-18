@@ -110,7 +110,9 @@ const Home: React.FC = () => {
 
       </select>
 
-      <div></div>
+      <div>
+        
+      </div>
 
       <select
       className='border border-gray-600 rounded-lg p-2'
