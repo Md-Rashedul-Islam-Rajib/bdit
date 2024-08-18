@@ -40,6 +40,7 @@ const Home: React.FC = () => {
           limit: limit,
           search: searchQuery,
           brand: selectedBrand,
+          category: selectedCategory,
         },
         
       });
