@@ -59,7 +59,6 @@ const Home: React.FC = () => {
   
   const { products, currentPage: fetchedPage, totalPages } = data;
   console.log({currentPage,totalPages})
-  if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error loading products</div>;
 
 
@@ -145,10 +144,10 @@ const Home: React.FC = () => {
 
     </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 m-6'>
+    {isLoading ? "Loading" :    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 m-6'>
         {products?.map((product:Product) => (
           <Card
-            key={product.id}
+            key={product.id} // Assuming _id is the identifier field in your MongoDB collection
             name={product.name}
             image={product.image}
             price={product.price}
@@ -156,7 +155,7 @@ const Home: React.FC = () => {
             brand={product.brand}
           />
         ))}
-      </div>
+      </div>}
       <Pagination
         currentPage={fetchedPage}
         totalPages={totalPages}
