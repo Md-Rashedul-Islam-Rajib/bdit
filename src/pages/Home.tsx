@@ -97,6 +97,7 @@ const Home: React.FC = () => {
         <option value="SSD">Solid State Drive</option>
         <option value="RAM">Random Access Memory</option>
         <option value="PSU">Power Supply Unit</option>
+        <option value="PSU">Power Supply Unit</option>
 
       </select>
 
