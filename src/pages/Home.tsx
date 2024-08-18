@@ -60,7 +60,7 @@ const Home: React.FC = () => {
   return (
     <main>
 
-    {/* <div className='flex justify-between items-center m-6'>
+    <div className='flex justify-between items-center m-6'>
 
       <select
       className='border border-gray-600 rounded-lg p-2'
@@ -73,7 +73,7 @@ const Home: React.FC = () => {
 
       </select>
 
-    </div> */}
+    </div>
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 m-6'>
         {products?.map((product:Product) => (
