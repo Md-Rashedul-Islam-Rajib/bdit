@@ -24,7 +24,7 @@ const Home: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [limit] = useState<number>(8);
   // const [selectedBrand, setSelectedBrand] = useState<string>('');
-  // const [selectedCategory, setSelectedCategory] = useState<string>('');
+  const [selectedCategory, setSelectedCategory] = useState<string>('');
 
   if(searchQuery){
     console.log(searchQuery)
@@ -51,10 +51,8 @@ const Home: React.FC = () => {
 
   
   
-  const { products, currentPage: c, totalPages } = data;
-  const fetchedPage = parseInt(c);
-  console.log({fetchedPage,totalPages})
-
+  const { products, currentPage: fetchedPage, totalPages } = data;
+  console.log({currentPage,totalPages})
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error loading products</div>;
 
@@ -71,10 +69,7 @@ const Home: React.FC = () => {
       >
         <option value=''>All Brands</option>
         <option value='AMD'>Advanced Micro Device</option>
-        <option value='intel'>Intel</option>
-        <option value='MSI'>Micro Star International</option>
-        <option value='NZXT'>NZXT</option>
-        <option value='maxsun'>NZXT</option>
+        <option value='AMD'>Advanced Micro Device</option>
 
       </select>
 
