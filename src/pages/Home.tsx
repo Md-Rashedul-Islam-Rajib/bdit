@@ -70,7 +70,7 @@ const Home: React.FC = () => {
         <option value=''>All Brands</option>
         <option value='AMD'>Advanced Micro Device</option>
         <option value='intel'>Intel</option>
-        <option value='MSI'>Intel</option>
+        <option value='MSI'>Micro Star International</option>
 
       </select>
 
