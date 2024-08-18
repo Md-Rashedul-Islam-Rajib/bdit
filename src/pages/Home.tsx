@@ -148,7 +148,7 @@ const Home: React.FC = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 m-6'>
         {products?.map((product:Product) => (
           <Card
-            key={product._id} // Assuming _id is the identifier field in your MongoDB collection
+            key={product.id}
             name={product.name}
             image={product.image}
             price={product.price}
