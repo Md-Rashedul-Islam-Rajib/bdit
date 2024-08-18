@@ -9,7 +9,7 @@ const Loader: React.FC = () => {
         preserveAspectRatio="xMidYMid"
         width="100"
         height="100"
-        className="animate-spn"
+        className="animate-spin"
       >
         <g transform="matrix(1,0,0,1,20,20)">
           <rect fill="#e15b64" height="30" width="30" y="-15" x="-15" transform="matrix(0.29183778166770935,0,0,0.29183778166770935,0,0)" />
