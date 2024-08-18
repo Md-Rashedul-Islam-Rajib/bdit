@@ -8,7 +8,7 @@ import { getAuth } from "firebase/auth";
 const firebaseConfig = {
 	apiKey: import.meta.env.VITE_APIKEY,
 	authDomain: import.meta.env.VITE_AUTHDOMAIN,
-	projectId: import.meta.env,
+	projectId: import.meta.env.VITE_PROJECTID,
 	storageBucket: "bdit-643f8.appspot.com",
 	messagingSenderId: "922799030818",
 	appId: "1:922799030818:web:786e733f16d348da6d007b"
