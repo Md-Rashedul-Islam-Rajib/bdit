@@ -107,9 +107,9 @@ const Home: React.FC = () => {
       </select>
 
       <select
-      
+      className='border'
       >
-        
+
       </select>
 
     </div>
