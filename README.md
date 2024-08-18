@@ -1,6 +1,6 @@
 # BDIT
 
-## [Live Link](https://prodigy-picks-nhb.vercel.app)
+## [Live Link](https://bdit-643f8.web.app)
 
 ## Overview
 
