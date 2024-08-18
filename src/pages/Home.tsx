@@ -42,6 +42,7 @@ const Home: React.FC = () => {
           search: searchQuery,
           brand: selectedBrand,
           category: selectedCategory,
+          sort: sortOption,
         },
         
       });
