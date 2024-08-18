@@ -10,7 +10,7 @@ const firebaseConfig = {
 	authDomain: import.meta.env.VITE_AUTHDOMAIN,
 	projectId: import.meta.env.VITE_PROJECTID,
 	storageBucket: import.meta.env.VITE_STORAGEBUCKET,
-	messagingSenderId: import.meta,
+	messagingSenderId: import.meta.env,
 	appId: "1:922799030818:web:786e733f16d348da6d007b"
   };
 
