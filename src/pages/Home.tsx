@@ -46,6 +46,7 @@ const Home: React.FC = () => {
           category: selectedCategory,
           sort: sortOption,
           minPrice: minPrice !== 0 ? minPrice : undefined,
+          maxPrice: maxPrice !== '' ? maxPrice : undefined,
         },
         
       });
