@@ -113,7 +113,10 @@ const Home: React.FC = () => {
       <div
       className='flex items-center gap-2'
       >
-        <input type="text" />
+        <input 
+        type="number"
+        
+        />
 
       </div>
 
