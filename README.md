@@ -27,7 +27,7 @@ The BDIT is a single-page application (SPA) built with React.js and Vite for a f
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/nazmul-nhb/prodigy-picks-client
+    git clone https://github.com/Md-Rashedul-Islam-Rajib/bdit.git
     ```
 
 2. **Navigate to the project directory**:
