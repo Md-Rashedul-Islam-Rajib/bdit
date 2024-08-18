@@ -107,7 +107,7 @@ const Home: React.FC = () => {
       </select>
 
       <select
-      className='border'
+      className='border border-gray-600'
       >
 
       </select>
