@@ -76,6 +76,7 @@ const Home: React.FC = () => {
         <option value='asus'>Asus</option>
         <option value='EKWB'>EKWB</option>
         <option value='gigabyte'>Gigabyte</option>
+        <option value='gigabyte'>Gigabyte</option>
 
       </select>
 
