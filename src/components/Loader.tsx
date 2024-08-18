@@ -8,7 +8,7 @@ const Loader: React.FC = () => {
         viewBox="0 0 100 100"
         preserveAspectRatio="xMidYMid"
         width="100"
-        height="100"
+        height="100
         className="animate-spin"
       >
         <g transform="matrix(1,0,0,1,20,20)">
