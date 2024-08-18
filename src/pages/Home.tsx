@@ -57,7 +57,7 @@ const Home: React.FC = () => {
   return (
     <main>
 
-    <div className='flex'>
+    <div className='flex justify-between'>
 
     </div>
 
