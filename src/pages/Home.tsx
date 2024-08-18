@@ -23,7 +23,7 @@ const Home: React.FC = () => {
   const { searchQuery } = useContext(SearchContext);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [limit] = useState<number>(8);
-  // const [selectedBrand, setSelectedBrand] = useState<string>('');
+  const [selectedBrand, setSelectedBrand] = useState<string>('');
   const [selectedCategory, setSelectedCategory] = useState<string>('');
 
   if(searchQuery){
