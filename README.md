@@ -100,6 +100,3 @@ The BDIT is a single-page application (SPA) built with React.js and Vite for a f
 - Integrated Google Authentication using Firebase.
 - Implemented Email and Password Authentication using Firebase.
 
-### Cart Operations (Extra Feature)
-
-- Users can add and remove products from their cart.
