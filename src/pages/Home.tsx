@@ -118,6 +118,7 @@ const Home: React.FC = () => {
         placeholder="Min Price"
         className='border border-gray-600 rounded-lg p-2'
         value={minPrice === 0 ? '' : minPrice}
+        onChange={(e) => setMinPrice(e.target.value ? parseInt(e.target.value) : 0)}
         />
 
       </div>
