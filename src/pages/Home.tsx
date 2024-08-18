@@ -65,7 +65,7 @@ const Home: React.FC = () => {
   return (
     <main>
 
-    <div className='flex flex-col md:flex-row justify-between items-center m-6'>
+    <div className=' justify-between items-center m-6'>
 
       <select
       className='border border-gray-600 rounded-lg p-2'
